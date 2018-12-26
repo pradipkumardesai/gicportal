@@ -1,0 +1,13 @@
+<wk-module-header headerText="Internal openings"></wk-module-header>
+<div>
+    <div *ngFor="let position of openPositions" class="wk-card" style="display:flex;padding:5px;margin: 5px;background-color: #409bd2;
+    color: white;">
+        <div style="width:15%">{{position.jobCode}}</div>
+        <div style="width:15%">{{position.position}}</div>
+        <div style="width:45%">{{position.skills}}</div>
+        <div style="width:10%">{{position.exp}}</div>
+        <div style="width:15%">
+            <a href="" style="color: white;">Refer a friend</a>
+        </div>        
+    </div>
+</div>
