@@ -3,11 +3,13 @@ import { CommonModule } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { PoliciesProceduresComponent } from "./human-resources/policies-procedures/components/policies-procedures/policies-procedures.component";
+import { EmployeeAchievementsComponent } from "./human-resources/employee-achievements/components/employee-achievements/employee-achievements.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
   { path: "home", component: HomeComponent },
-  { path: "policies", component: PoliciesProceduresComponent }
+  { path: "policies", component: PoliciesProceduresComponent },
+  { path: "emp-achievements", component: EmployeeAchievementsComponent }
 ];
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(routes)],
