@@ -6,6 +6,7 @@ import { PoliciesProceduresComponent } from "./human-resources/policies-procedur
 import { EmployeeAchievementsComponent } from "./human-resources/employee-achievements/components/employee-achievements/employee-achievements.component";
 import { InternalOpeningsComponent } from "./human-resources/internal-openings/components/internal-openings/internal-openings.component";
 import { NewJoineesComponent } from "./human-resources/new-joinees/components/new-joinees/new-joinees.component";
+import { BirthdaysThisMonthComponent } from "./human-resources/birthdays-this-month/components/birthdays-this-month/birthdays-this-month.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -13,7 +14,8 @@ export const routes: Routes = [
   { path: "policies", component: PoliciesProceduresComponent },
   { path: "emp-achievements", component: EmployeeAchievementsComponent },
   { path: "internal-openings", component: InternalOpeningsComponent },
-  { path: "new-joinees", component: NewJoineesComponent }
+  { path: "new-joinees", component: NewJoineesComponent },
+  { path: "birthdays-this-month", component: BirthdaysThisMonthComponent }
 ];
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(routes)],
