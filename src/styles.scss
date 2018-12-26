@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "./../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding-right: 20px;
+}
+
+.wk-nav-links {
+    color: white !important;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.wk-nav-sub-links {
+    color: black !important;
+    text-decoration: none;
+    background-color: transparent;
+   font-size: 14px;
+}
+
+li{
+    padding: 0px 20px;
+}
+
+.dropdown-menu{
+    min-width: 13rem !important;
+}
+
+.wk-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
+
+wk-tile-header {
+    color: #85bc20;
+    font-size: 24px;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+}
+
+
+
+
