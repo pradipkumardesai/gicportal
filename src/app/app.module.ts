@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { HumanResourcesModule } from './human-resources/human-resources.module';
 import { CoreModule } from './core/core.module';
 import { HelpDeskModule } from './help-desk/help-desk.module';
+import { HotLinksModule } from './hot-links/hot-links.module';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HelpDeskModule } from './help-desk/help-desk.module';
     SharedModule,
     HomeModule,
     HumanResourcesModule,
-    HelpDeskModule
+    HelpDeskModule,
+    HotLinksModule
   ],
   providers: [],
   bootstrap: [AppComponent]
