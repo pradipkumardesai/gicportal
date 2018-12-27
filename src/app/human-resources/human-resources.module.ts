@@ -5,6 +5,7 @@ import { EmployeeAchievementsModule } from "./employee-achievements/employee-ach
 import { InternalOpeningsModule } from "./internal-openings/internal-openings.module";
 import { NewJoineesModule } from "./new-joinees/new-joinees.module";
 import { BirthdaysThisMonthModule } from "./birthdays-this-month/birthdays-this-month.module";
+import { DownloadsModule } from "./downloads/downloads.module";
 
 @NgModule({
   imports: [
@@ -13,14 +14,16 @@ import { BirthdaysThisMonthModule } from "./birthdays-this-month/birthdays-this-
     EmployeeAchievementsModule,
     InternalOpeningsModule,
     NewJoineesModule,
-    BirthdaysThisMonthModule
+    BirthdaysThisMonthModule,
+    DownloadsModule
   ],
   exports: [
     PoliciesProceduresModule,
     EmployeeAchievementsModule,
     InternalOpeningsModule,
     NewJoineesModule,
-    BirthdaysThisMonthModule
+    BirthdaysThisMonthModule,
+    DownloadsModule
   ],
   declarations: []
 })
