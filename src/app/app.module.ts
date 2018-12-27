@@ -9,6 +9,7 @@ import { AppRouteModule } from './app.route.module';
 import { RouterModule } from '@angular/router';
 import { HumanResourcesModule } from './human-resources/human-resources.module';
 import { CoreModule } from './core/core.module';
+import { HelpDeskModule } from './help-desk/help-desk.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CoreModule } from './core/core.module';
     CoreModule,
     SharedModule,
     HomeModule,
-    HumanResourcesModule
+    HumanResourcesModule,
+    HelpDeskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

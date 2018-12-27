@@ -1,0 +1,8 @@
+<wk-module-header headerText="Admin Policies & Procedures"></wk-module-header>
+<div>        
+  <ul style="margin: 25px 0px 0px -30px;">
+      <li *ngFor="let policy of policies" style="display: inline-block;width: 300px;height: 195px;background-color: white;margin-bottom: 7px;padding: 0px 10px;">
+         <wk-policy-card [policy]="policy"></wk-policy-card>
+      </li>
+  </ul>  
+</div>

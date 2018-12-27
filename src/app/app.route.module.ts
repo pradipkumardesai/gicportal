@@ -8,6 +8,8 @@ import { InternalOpeningsComponent } from "./human-resources/internal-openings/c
 import { NewJoineesComponent } from "./human-resources/new-joinees/components/new-joinees/new-joinees.component";
 import { BirthdaysThisMonthComponent } from "./human-resources/birthdays-this-month/components/birthdays-this-month/birthdays-this-month.component";
 import { DownloadsComponent } from "./human-resources/downloads/components/downloads/downloads.component";
+import { AdminComponent } from "./help-desk/admin/components/admin/admin.component";
+import { ItSupportComponent } from "./help-desk/it-support/components/it-support/it-support.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -17,7 +19,9 @@ export const routes: Routes = [
   { path: "internal-openings", component: InternalOpeningsComponent },
   { path: "new-joinees", component: NewJoineesComponent },
   { path: "birthdays-this-month", component: BirthdaysThisMonthComponent },
-  { path: "downloads", component: DownloadsComponent }
+  { path: "downloads", component: DownloadsComponent },
+  { path: "admin", component: AdminComponent },
+  { path: "it-support", component: ItSupportComponent }
 ];
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(routes)],
