@@ -1,94 +1,94 @@
 import { Injectable } from '@angular/core';
-import { Tile } from '../models/tile.model';
+import { Policy } from '../../../shared/models/policy.model';
 
 @Injectable()
 export class PoliciesProcedureService {
 
   constructor() {}
 
-  public getPolicies(): Promise<Array<Tile>> {
-    let policies: Promise<Array<Tile>> = new Promise<Array<Tile>>(
+  public getPolicies(): Promise<Array<Policy>> {
+    let policies: Promise<Array<Policy>> = new Promise<Array<Policy>>(
       (resolve, reject) => {
-        let lst = new Array<Tile>();
+        let lst = new Array<Policy>();
         lst.push(
-          new Tile(
+          new Policy(
             "EmployeeWise",
             "EmployeeWise Summery",
             "EmployeeWise description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "Telephone usage",
-            "Telephone usage Tile Summery",
-            "Telephone usage Tile description"
+            "Telephone usage Policy Summery",
+            "Telephone usage Policy description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "General policies",
             "General policies Summery",
             "General policies description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "Work from home",
             "Work from home Summery",
             "Work from home description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "EmployeeWise",
             "EmployeeWise Summery",
             "EmployeeWise description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "Telephone usage",
-            "Telephone usage Tile Summery",
-            "Telephone usage Tile description"
+            "Telephone usage Policy Summery",
+            "Telephone usage Policy description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "General policies",
             "General policies Summery",
             "General policies description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "Work from home",
             "Work from home Summery",
             "Work from home description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "EmployeeWise",
             "EmployeeWise Summery",
             "EmployeeWise description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "Telephone usage",
-            "Telephone usage Tile Summery",
-            "Telephone usage Tile description"
+            "Telephone usage Policy Summery",
+            "Telephone usage Policy description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "General policies",
             "General policies Summery",
             "General policies description"
           )
         );
         lst.push(
-          new Tile(
+          new Policy(
             "Work from home",
             "Work from home Summery",
             "Work from home description"

@@ -1,4 +1,4 @@
-export class Tile {
+export class Policy {
   public tileName: string;
   public tileSummery: string;
   public tileDescription: string;

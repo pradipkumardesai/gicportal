@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Tile } from '../../models/tile.model';
 import { PoliciesProcedureService } from '../../services/policies-procedure.service';
+import { Policy } from '../../../../shared/models/policy.model';
 
 @Component({
   selector: 'wk-policies-procedures',
@@ -9,7 +9,7 @@ import { PoliciesProcedureService } from '../../services/policies-procedure.serv
 })
 export class PoliciesProceduresComponent implements OnInit {
 
-  policies: Array<Tile> = null;
+  policies: Array<Policy> = null;
 
   constructor(private hrpolicyService: PoliciesProcedureService) {}
 
