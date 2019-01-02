@@ -11,6 +11,7 @@ import { DownloadsComponent } from "./human-resources/downloads/components/downl
 import { AdminComponent } from "./help-desk/admin/components/admin/admin.component";
 import { ItSupportComponent } from "./help-desk/it-support/components/it-support/it-support.component";
 import { HotLinksComponent } from "./hot-links/components/hot-links/hot-links.component";
+import { CommitteeComponent } from "./committees/components/committee/committee.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -23,8 +24,11 @@ export const routes: Routes = [
   { path: "downloads", component: DownloadsComponent },
   { path: "admin", component: AdminComponent },
   { path: "it-support", component: ItSupportComponent },
-  { path: "hot-links", component: HotLinksComponent }
+  { path: "hot-links", component: HotLinksComponent },
+  { path: "committees", pathMatch:"full", redirectTo:"committees/food" },
+  { path: "committees/:id", component: CommitteeComponent }
 ];
+
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(routes)],
   exports: [],

@@ -11,6 +11,7 @@ import { HumanResourcesModule } from './human-resources/human-resources.module';
 import { CoreModule } from './core/core.module';
 import { HelpDeskModule } from './help-desk/help-desk.module';
 import { HotLinksModule } from './hot-links/hot-links.module';
+import { CommitteesModule } from './committees/committees.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HotLinksModule } from './hot-links/hot-links.module';
     HomeModule,
     HumanResourcesModule,
     HelpDeskModule,
-    HotLinksModule
+    HotLinksModule,
+    CommitteesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
