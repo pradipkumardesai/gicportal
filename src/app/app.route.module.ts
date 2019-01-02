@@ -12,6 +12,7 @@ import { AdminComponent } from "./help-desk/admin/components/admin/admin.compone
 import { ItSupportComponent } from "./help-desk/it-support/components/it-support/it-support.component";
 import { HotLinksComponent } from "./hot-links/components/hot-links/hot-links.component";
 import { CommitteeComponent } from "./committees/components/committee/committee.component";
+import { ProjectComponent } from "./projects/components/project/project.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -26,7 +27,9 @@ export const routes: Routes = [
   { path: "it-support", component: ItSupportComponent },
   { path: "hot-links", component: HotLinksComponent },
   { path: "committees", pathMatch:"full", redirectTo:"committees/food" },
-  { path: "committees/:id", component: CommitteeComponent }
+  { path: "committees/:id", component: CommitteeComponent },
+  { path: "projects", pathMatch:"full", redirectTo:"projects/axcess" },
+  { path: "projects/:id", component: ProjectComponent }
 ];
 
 @NgModule({

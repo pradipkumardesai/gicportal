@@ -12,6 +12,7 @@ import { CoreModule } from './core/core.module';
 import { HelpDeskModule } from './help-desk/help-desk.module';
 import { HotLinksModule } from './hot-links/hot-links.module';
 import { CommitteesModule } from './committees/committees.module';
+import { ProjectsModule } from './projects/projects.module';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { CommitteesModule } from './committees/committees.module';
     HumanResourcesModule,
     HelpDeskModule,
     HotLinksModule,
-    CommitteesModule
+    CommitteesModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
