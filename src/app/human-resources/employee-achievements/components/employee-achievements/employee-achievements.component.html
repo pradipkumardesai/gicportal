@@ -1,22 +1,37 @@
 <wk-module-header headerText="Employee achievements"></wk-module-header>
 
-<ul style="margin: 5px 0px 0px -45px;">
-    <li *ngFor="let policy of [1,2,3,4,5]" style="display: inline-block;width: 420px;height: 250px;background-color: white;margin-bottom: 7px;padding: 0px 10px;">
-      <div style="margin: 10px 0px 0px 10px; width: 400px;background-color: #f6f4f3;" class="wk-card">
-        <div style="padding:5px"><h3 style="color: #00619c;"> Pradipkumar Desai</h3></div>
+  <div *ngFor="let policy of [1,2]" style="background-color: white;margin-bottom: 7px;padding: 0px 10px;">
+    
+    <div class="wk-card" style="padding: 5px;margin-top: 15px;">
+      <div style="padding: 10px 10px 10px 10px;color:#a3a3a3 ;text-transform: uppercase;border-bottom: 1px solid gray;">
+        <div style="font-size: 25px;"><i class="fas fa-award"></i><span style="margin-left: 10px;">Employee of The Year</span></div>
+        <div><small style="color:#007AC3;"> Wed, Jul 20, 2016</small></div>
         
-        <div style="display: flex;padding:5px;">
-          <div style="width: 25%;"><img src="assets/images/pradip.jpg" height="75" width="75" alt=""></div>
-          <div style="width: 75%;">
-            <div><h4>Sr. Software Engineer I</h4></div>
-            <div><h6 style="color: #85bc20;">Admin Manager</h6></div>
-            <div><small style="color:#007AC3;"> Wed, Jul 20, 2016</small></div>
-          </div>
-        </div>
+      </div>
+      <div style="margin: 10px 0px 0px 10px; background-color: #f6f4f3;" class="wk-flex">
       
-        <div style="padding:5px;background-color: #2980B9;color: white;">
+        <div style="width:100px;">
+          <div><img src="assets/images/pradip.jpg" height="75" width="75" alt=""></div>
+        </div>
+        
+        <div style="width:15%;padding-top: 10px;">
+          <div><h3 style="color: #00619c;"> Pradipkumar Desai</h3></div>
+          <div><h6>Sr. Software Engineer I</h6></div>
+        </div>
+  
+        
+  
+        <div style="width:10%;padding: 10px 10px">
+          <div style="border-bottom: 1px solid gray;"><h3 style="color: #85bc20;">AXCESS</h3></div>
+          <div><h6 style="color: #85bc20;">Admin Manager</h6></div>
+          
+        </div>
+  
+        <div style="width:75%;padding:5px;background-color: #2980B9;color: white;">
           Pradipkumar has 6 years experience with various technologies like Angular, C#. Pradipkumar has 6 years experience with various technologies like Angular, C#
         </div>
-      </div>      
-    </li>
-</ul>
+      </div>     
+    </div>
+    
+  </div>
+

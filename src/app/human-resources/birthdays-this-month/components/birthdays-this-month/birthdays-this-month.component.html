@@ -1,18 +1,27 @@
 <wk-module-header headerText="Birthday's this month"></wk-module-header>
-<ul style="margin: 5px 0px 0px -45px;">
-    <li *ngFor="let policy of [1,2,3,4,5,6,7,8,9,10,11,22,33,44,55]" style="display: inline-block;width: 420px;height: 165px;background-color: white;margin-bottom: 7px;padding: 0px 10px;">
-      <div style="margin: 10px 0px 0px 10px; width: 400px;background-color: #f6f4f3;" class="wk-card">
-        <div style="padding:5px"><h3 style="color: #409bd2;text-transform: uppercase;"> PRADIPKUMAR DESAI</h3></div>
-        <div style="display: flex;padding:5px;">
-          <div style="width: 25%;"><img src="assets/images/pradip.jpg" height="75" width="75" alt=""></div>
-          <div style="width: 75%;">
-            <div><h4>Sr. Software Engineer I</h4></div>
-            <div><h6>Admin Manager</h6></div>
-            <div><small style="color:#007AC3;"> Wed, Jul 20, 2016</small></div>
-          </div>
-        </div>
-      </div>
-       
-    </li>
-</ul>
+<div *ngFor="let policy of [1,2]" style="background-color: white;margin-bottom: 7px;padding: 0px 10px;">
+    
+  <div style="margin: 10px 0px 0px 10px; background-color: #f6f4f3;" class="wk-flex wk-card">
+    
+    <div style="width:100px;padding: 5px 5px 5px 5px;">
+      <div><img src="assets/images/pradip.jpg" height="75" width="75" alt=""></div>
+    </div>
+    
+    <div style="width:15%;padding-top: 10px;">
+      <div><h3 style="color: #00619c;"> Pradipkumar Desai</h3></div>
+      <div><h6>Sr. Software Engineer I</h6></div>
+    </div>
+
+    
+
+    <div style="width:10%;padding: 10px 10px">
+      <div style="border-bottom: 1px solid gray;"><h3 style="color: #85bc20;">AXCESS</h3></div>
+      <div><h6 style="color: #85bc20;">Admin Manager</h6></div>
+      
+    </div>
+
+    <div style="padding: 22px;"><small style="color:#007AC3;font-size: 30px;"> Wed, Jul 20, 2016</small></div>
+  </div>  
+  
+</div>
 
