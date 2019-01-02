@@ -13,6 +13,7 @@ import { ItSupportComponent } from "./help-desk/it-support/components/it-support
 import { HotLinksComponent } from "./hot-links/components/hot-links/hot-links.component";
 import { CommitteeComponent } from "./committees/components/committee/committee.component";
 import { ProjectComponent } from "./projects/components/project/project.component";
+import { EmployeeDirectoryComponent } from "./employee-directory/components/employee-directory/employee-directory.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -29,7 +30,8 @@ export const routes: Routes = [
   { path: "committees", pathMatch:"full", redirectTo:"committees/food" },
   { path: "committees/:id", component: CommitteeComponent },
   { path: "projects", pathMatch:"full", redirectTo:"projects/axcess" },
-  { path: "projects/:id", component: ProjectComponent }
+  { path: "projects/:id", component: ProjectComponent },
+  { path: "emp-dir", component: EmployeeDirectoryComponent }
 ];
 
 @NgModule({

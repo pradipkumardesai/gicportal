@@ -44,6 +44,10 @@ wk-tile-header {
     display: flex;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #E5E8E8;
+    opacity: 1; /* Firefox */
+  }
 
 
 

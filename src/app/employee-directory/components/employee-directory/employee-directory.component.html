@@ -1,0 +1,14 @@
+<wk-module-header headerText="Employee Directory"></wk-module-header>
+<div>
+    <input style="margin:10px; width: 22%;height: 50px;font-size: 20px;padding-left: 10px;" placeholder="Search employee here"><i style="margin: 0px 0px 0px 0px; font-size: 30px;" class="fas fa-search"></i> 
+</div>
+
+<div>
+    <div *ngFor="let employee of emloyeeList">
+        <wk-directory-card [employee]="this.employee"></wk-directory-card>
+    </div>  
+    
+</div>
+
+
+

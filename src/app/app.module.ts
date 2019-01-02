@@ -13,6 +13,7 @@ import { HelpDeskModule } from './help-desk/help-desk.module';
 import { HotLinksModule } from './hot-links/hot-links.module';
 import { CommitteesModule } from './committees/committees.module';
 import { ProjectsModule } from './projects/projects.module';
+import { EmployeeDirectoryModule } from './employee-directory/employee-directory.module';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ProjectsModule } from './projects/projects.module';
     HelpDeskModule,
     HotLinksModule,
     CommitteesModule,
-    ProjectsModule
+    ProjectsModule,
+    EmployeeDirectoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
