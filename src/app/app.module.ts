@@ -14,15 +14,16 @@ import { HotLinksModule } from './hot-links/hot-links.module';
 import { CommitteesModule } from './committees/committees.module';
 import { ProjectsModule } from './projects/projects.module';
 import { EmployeeDirectoryModule } from './employee-directory/employee-directory.module';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [
+  declarations: [ 
     AppComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
+    NgbModule.forRoot(),
     AppRouteModule,
     CoreModule,
     SharedModule,
