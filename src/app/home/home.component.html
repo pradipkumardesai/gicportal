@@ -1,9 +1,9 @@
 <div class="container-fluid">
   <div class="row">
 
-    <div class="col-sm-3 WKGIC-HM-1" >
+    <div class="col-sm-5 WKGIC-HM-1" >
       <div style="background-color: #f6f4f3; height: 100%;" class="wk-card">
-        <div style="padding: 10px; border-bottom: 1px solid gray;margin: 5px;"><h3 style="color: #85bc20;font-family: FranziskaWebPro,serif;font-weight: 500;">UPCOMING EVENTS ....</h3></div>
+        <div style="padding: 10px; border-bottom: 1px solid gray;margin: 5px;"><h3 style="color: #85bc20;font-family: FranziskaWebPro,serif;font-weight: 500;">Coming soon...</h3></div>
         
         <div style="padding-left: 20px;">
           <div>
@@ -31,8 +31,38 @@
       </div>
     </div>
 
-    <div class="col-sm-6 WKGIC-HM-1">
-        <ngb-carousel *ngIf="images">
+    <div class="col-sm-3 WKGIC-HM-1" >
+        <div style="background-color: #f6f4f3; height: 100%;" class="wk-card">
+          <div style="padding: 10px; border-bottom: 1px solid gray;margin: 5px;"><h3 style="color: #85bc20;font-family: FranziskaWebPro,serif;font-weight: 500;">Committee Updates</h3></div>
+          
+          <div style="padding-left: 20px;">
+            <div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Annual day 2018</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>10 years celebration</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Cake cutting</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Award destribution</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Fire drill</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>US travel</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Team outing</div>
+            </div>
+          </div>
+  
+          <div>
+            <div style="float: right;margin: 10px;">
+              <span style="color:#007AC3">SHOW ALL ....</span>
+            </div>
+            
+          </div>
+  
+          <!-- <div style="bottom: 0px;width: 100%;">
+            <div style="float: right;background-color: tomato;padding: 5px 5px 5px 25px;width: 70px;height: 70px;"><span style="font-size: 40px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span></div>
+            
+          </div> -->
+        </div>
+      </div>
+    
+    <div class="col-sm-4 WKGIC-HM-1">
+        <ngb-carousel *ngIf="images" style="margin: 15px;">
             <ng-template ngbSlide>
               <img [src]="images[0]" alt="Random first slide">
               <div class="carousel-caption">
@@ -57,17 +87,79 @@
           </ngb-carousel>
     </div>
 
-    <div class="col-sm-3 WKGIC-HM-1">
+   
+  </div>
+
+
+  <div class="row">
+
+      <div class="col-sm-4 WKGIC-HM-1">
+          <ngb-carousel *ngIf="images" style="margin: 15px;">
+              <ng-template ngbSlide>
+                <img [src]="images[0]" alt="Random first slide">
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[1]" alt="Random second slide">
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[2]" alt="Random third slide">
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </ng-template>
+            </ngb-carousel>
+      </div>
+  
+      <div class="col-sm-3 WKGIC-HM-1" >
         <div style="background-color: #f6f4f3; height: 100%;" class="wk-card">
-            <div style="padding: 10px; border-bottom: 1px solid gray;margin: 5px;"><h3 style="color: #85bc20;font-family: FranziskaWebPro,serif;font-weight: 500;">My recent requests</h3></div>
+          <div style="padding: 10px; border-bottom: 1px solid gray;margin: 5px;"><h3 style="color: #85bc20;font-family: FranziskaWebPro,serif;font-weight: 500;">UPCOMING EVENTS ....</h3></div>
+          
+          <div style="padding-left: 20px;">
+            <div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Annual day 2018</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>10 years celebration</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Cake cutting</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Award destribution</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Fire drill</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>US travel</div>
+              <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Team outing</div>
+            </div>
+          </div>
+  
+          <div>
+            <div style="float: right;margin: 10px;">
+              <span style="color:#007AC3">SHOW ALL ....</span>
+            </div>
+            
+          </div>
+  
+          <!-- <div style="bottom: 0px;width: 100%;">
+            <div style="float: right;background-color: tomato;padding: 5px 5px 5px 25px;width: 70px;height: 70px;"><span style="font-size: 40px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span></div>
+            
+          </div> -->
+        </div>
+      </div>
+  
+      <div class="col-sm-5 WKGIC-HM-1" >
+          <div style="background-color: #f6f4f3; height: 100%;" class="wk-card">
+            <div style="padding: 10px; border-bottom: 1px solid gray;margin: 5px;"><h3 style="color: #85bc20;font-family: FranziskaWebPro,serif;font-weight: 500;">UPCOMING EVENTS ....</h3></div>
             
             <div style="padding-left: 20px;">
               <div>
-                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Internet reimbursment December 2018</div>
-                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Internet reimbursment December 2018</div>
-                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Internet reimbursment December 2018</div>
-                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Internet reimbursment December 2018</div>
-                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Internet reimbursment December 2018</div>
+                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Annual day 2018</div>
+                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>10 years celebration</div>
+                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Cake cutting</div>
+                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Award destribution</div>
+                <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Fire drill</div>
                 <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>US travel</div>
                 <div style="padding: 5px;"><span style="font-size: 15px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-right"></i></span>Team outing</div>
               </div>
@@ -85,9 +177,9 @@
               
             </div> -->
           </div>
-          
+        </div>
+     
+     
     </div>
-  </div>
-
   
 </div>

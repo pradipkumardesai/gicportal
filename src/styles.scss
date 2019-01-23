@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 // @import "./../node_modules/bootstrap/scss/bootstrap.scss";
 
+.home-card-heade-text{
+    color: #85bc20;
+    font-family: FranziskaWebPro,serif;
+    font-weight: 500;
+}
 .navbar-light .navbar-nav .nav-link {
     color: white;
     padding-right: 20px;
@@ -12,7 +17,7 @@
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
     font-family: FranziskaWebPro,serif;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .wk-nav-sub-links {
