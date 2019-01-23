@@ -15,6 +15,7 @@ import { CommitteesModule } from './committees/committees.module';
 import { ProjectsModule } from './projects/projects.module';
 import { EmployeeDirectoryModule } from './employee-directory/employee-directory.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AboutUsModule } from './about-us/about-us.module';
 
 @NgModule({
   declarations: [ 
@@ -33,7 +34,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     HotLinksModule,
     CommitteesModule,
     ProjectsModule,
-    EmployeeDirectoryModule
+    EmployeeDirectoryModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
