@@ -136,33 +136,57 @@
 
   <div class="row">
 
-      <div class="col-sm-4 WKGIC-HM-1">
-          <ngb-carousel *ngIf="images" style="margin: 15px;">
-              <ng-template ngbSlide>
-                <img [src]="images[0]" alt="Random first slide">
-                <div class="carousel-caption">
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-              </ng-template>
-              <ng-template ngbSlide>
-                <img [src]="images[1]" alt="Random second slide">
-                <div class="carousel-caption">
-                  <h3>Second slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </ng-template>
-              <ng-template ngbSlide>
-                <img [src]="images[2]" alt="Random third slide">
-                <div class="carousel-caption">
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-              </ng-template>
-            </ngb-carousel>
-      </div>
+      <div class="col-sm-5 WKGIC-HM-1" >
+          <div style="background-color: #409bd2; height: 100%;margin-top: 5px;" class="wk-card wk-flex">
+            
+          
   
-      <div class="col-sm-3 WKGIC-HM-1" >
+            <div style="width:60%;background-color: white;margin: 5px;">
+                <ngb-carousel *ngIf="images" style="margin: 10px 10px 5px 10px;">
+                    <ng-template ngbSlide>
+                      <img [src]="images[0]" alt="Random first slide">
+                      <div class="carousel-caption">
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <img [src]="images[1]" alt="Random second slide">
+                      <div class="carousel-caption">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <img [src]="images[2]" alt="Random third slide">
+                      <div class="carousel-caption">
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      </div>
+                    </ng-template>
+                  </ngb-carousel>
+            </div>
+            
+            <div style="width:40%;">
+                <div style="padding: 10px 15px; border-bottom: 1px solid white;margin-right: 100px;" class="wk-flex">
+                    <div style="margin-right: 0px;"><span style="font-size: 25px;margin-right: 10px;"><i class="fas fa-angle-double-left"></i></span></div>
+                    <div><h3 style="color: white;font-family: FranziskaWebPro,serif;font-weight: 500;">Life @GIC</h3></div>
+                   
+                  </div>
+
+                  <div class="wk-flex" style="margin-left: 20px;">
+                    <div><span style="font-size: 25px;margin-right: 10px;"><i class="fab fa-facebook-square"></i></span></div>
+                    <div><span style="font-size: 25px;margin-right: 10px;"><i class="fab fa-linkedin"></i></span></div>
+                    <div><span style="font-size: 25px;margin-right: 10px;"><i class="fab fa-twitter-square"></i></span></div>
+                    <div><span style="font-size: 25px;margin-right: 10px;"><i class="fab fa-instagram"></i></span></div>
+                  </div>
+            </div>
+    
+          
+          </div>
+        </div>
+  
+      <div class="col-sm-4 WKGIC-HM-1" >
         <div style="background-color: #f6f4f3; height: 100%;" class="wk-card">
           
           <div style="padding: 10px; border-bottom: 1px solid gray;margin: 5px;" class="wk-flex">
@@ -196,7 +220,7 @@
         </div>
       </div>
   
-      <div class="col-sm-5 WKGIC-HM-1" >
+      <div class="col-sm-3 WKGIC-HM-1" >
           <div style="background-color: #f6f4f3; height: 100%;" class="wk-card">
             
             <div style="padding: 10px; border-bottom: 1px solid gray;margin: 5px;" class="wk-flex">
