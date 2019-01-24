@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
 
-    <div class="col-sm-5 WKGIC-HM-1" >
+    <div class="col-sm-3 WKGIC-HM-1" >
 
 
       <div style="background-color: #f6f4f3; height: 100%;" class="wk-card">
@@ -67,33 +67,69 @@
           </div> -->
         </div>
       </div>
-    
-    <div class="col-sm-4 WKGIC-HM-1">
-        <ngb-carousel *ngIf="images" style="margin: 15px;">
-            <ng-template ngbSlide>
-              <img [src]="images[0]" alt="Random first slide">
-              <div class="carousel-caption">
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <img [src]="images[1]" alt="Random second slide">
-              <div class="carousel-caption">
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <img [src]="images[2]" alt="Random third slide">
-              <div class="carousel-caption">
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </div>
-            </ng-template>
-          </ngb-carousel>
-    </div>
 
+    <div class="col-sm-6 WKGIC-HM-1" >
+        <div style="background-color: #85bc20; height: 100%;margin-top: 5px;" class="wk-card wk-flex">
+          
+          <div style="width:40%;">
+              <div style="padding: 10px; border-bottom: 1px solid white;margin-left: 10px;" class="wk-flex">
+                 
+                  <div><h3 style="color: white;font-family: FranziskaWebPro,serif;font-weight: 500;">Annual Day 2018</h3></div>
+                  <div style="margin-left: 20px;"><span style="font-size: 25px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-angle-double-right"></i></span></div>
+                </div>
+      
+                <div style="padding-left: 20px;height: 70%;">
+                  <div style="padding: 10px;background-color: white;margin: 10px 15px 10px 0px;">
+                    <div style="border-bottom: 1px solid gray;" class="wk-flex">
+                      <div><span style="font-size: 25px;margin-right: 10px;"><i _ngcontent-c10="" class="fas fa-map-marker-alt"></i></span></div>
+                      <div><h3 style="color: #ca7b00;font-family: FranziskaWebPro,serif;font-weight: 500;padding-bottom: 5px;padding-top: 5px;">Westin, Pune</h3></div>
+                      
+                    </div> 
+                    <div><small style="color:#007AC3;"> Wed, Jul 20, 2016</small></div>
+                  </div>
+                </div>
+        
+                <div>
+                  <div style="float: right;margin: 10px;height: 10%;">
+                    <span style="color:white">See More ....</span>
+                  </div>
+                  
+                </div>
+          </div>
+
+          <div style="width:60%;background-color: white;margin: 5px;">
+              <ngb-carousel *ngIf="images" style="margin: 10px 10px 5px 10px;">
+                  <ng-template ngbSlide>
+                    <img [src]="images[0]" alt="Random first slide">
+                    <div class="carousel-caption">
+                      <h3>First slide label</h3>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <img [src]="images[1]" alt="Random second slide">
+                    <div class="carousel-caption">
+                      <h3>Second slide label</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <img [src]="images[2]" alt="Random third slide">
+                    <div class="carousel-caption">
+                      <h3>Third slide label</h3>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                  </ng-template>
+                </ngb-carousel>
+          </div>
+          
+        
+  
+        
+        </div>
+      </div>
+    
+   
    
   </div>
 
