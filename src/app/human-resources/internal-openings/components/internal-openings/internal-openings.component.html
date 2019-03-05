@@ -1,11 +1,11 @@
-<wk-module-header headerText="Internal openings"></wk-module-header>
+<button type="submit" (click)="onSubmit()"class="btn btn-success">Add New</button>
 <div>
-    <div *ngFor="let position of openPositions" class="wk-card" style="height:60px;display:flex;padding:5px;margin: 15px;background-color: #409bd2;
+    <div *ngFor="let position of openPositions" class="wk-card" style="height:100px;display:flex;padding:5px;margin: 15px;background-color: #409bd2;
     color: white;">
-        <div style="width:15%;padding-top: 13px;">{{position.jobCode}}</div>
-        <div style="width:15%;padding-top: 13px;">{{position.position}}</div>
-        <div style="width:45%;padding-top: 13px;">{{position.skills}}</div>
-        <div style="width:10%;padding-top: 13px;">{{position.exp}}</div>
+        <div style="width:15%;padding-top: 13px;">{{position.Jobcode}}</div>
+        <div style="width:15%;padding-top: 13px;">{{position.Designation}}</div>
+        <div style="width:45%;padding-top: 13px;">{{position.Skills}}</div>
+        <div style="width:10%;padding-top: 13px;">{{position.Experience}}</div>
         <div style="width:15%;padding-top: 13px;">
             <a href="" style="color: white;">Refer a friend</a>
         </div>        
