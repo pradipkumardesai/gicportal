@@ -1,5 +1,5 @@
-<wk-module-header headerText="Employee Directory"></wk-module-header>
-<div>
+<!-- <wk-module-header headerText="Employee Directory"></wk-module-header> -->
+<!-- <div>
     <input style="margin:10px; width: 22%;height: 50px;font-size: 20px;padding-left: 10px;" placeholder="Search employee here"><i style="margin: 0px 0px 0px 0px; font-size: 30px;" class="fas fa-search"></i> 
 </div>
 
@@ -8,7 +8,18 @@
         <wk-directory-card [employee]="this.employee"></wk-directory-card>
     </div>  
     
+</div> -->
+
+<div class="container">
+  <h2>Employee Directory</h2>
+  <div class="card" style="width:400px" *ngFor="let emp of getRslt">
+    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{emp.Name}}</h4>
+      <p class="card-text">{{emp.Designation}}</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+ 
 </div>
-
-
-

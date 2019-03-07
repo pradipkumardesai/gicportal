@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OpenPosition } from '../../models/position.model';
+import { DataService }  from '../../../../services/data.service';
 
 @Component({
   selector: 'wk-internal-openings',
@@ -7,16 +8,19 @@ import { OpenPosition } from '../../models/position.model';
   styleUrls: ['./internal-openings.component.scss']
 })
 export class InternalOpeningsComponent implements OnInit {
-
-  openPositions: Array<OpenPosition> = new Array<OpenPosition>();
-  constructor() {
-    this.openPositions.push(new OpenPosition("WK/TAA/362/2017","Sr. Software Developer","C#, RESTful Web API, SQL, OOPS, Web application background (HTML/ CSS, JavaScript, Angular JS / Bootstrap), TSQL.","5-7 Years",null));
-    this.openPositions.push(new OpenPosition("WK/TAA/362/2017","Sr. Software Developer","C#, RESTful Web API, SQL, OOPS, Web application background (HTML/ CSS, JavaScript, Angular JS / Bootstrap), TSQL.","5-7 Years",null));
-    this.openPositions.push(new OpenPosition("WK/TAA/362/2017","Sr. Software Developer","C#, RESTful Web API, SQL, OOPS, Web application background (HTML/ CSS, JavaScript, Angular JS / Bootstrap), TSQL.","5-7 Years",null));
-    this.openPositions.push(new OpenPosition("WK/TAA/362/2017","Sr. Software Developer","C#, RESTful Web API, SQL, OOPS, Web application background (HTML/ CSS, JavaScript, Angular JS / Bootstrap), TSQL.","5-7 Years",null));
+  private postRslt: string = '';
+  private postBack: string = 'grey';
+  private openPositions: string = '';
+  private getBack: string = 'grey';
+  constructor(private dataSvc: DataService) {
   }
 
   ngOnInit() {
+    var result = this.dataSvc.getOpenPositions() .subscribe(
+      r => {this.openPositions = r; this.getBack = 'success';},
+      e => {console.log(e); this.getBack = 'error';}
+    );
+
   }
 
 }

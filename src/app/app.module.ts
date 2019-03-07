@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
@@ -14,8 +14,14 @@ import { HotLinksModule } from './hot-links/hot-links.module';
 import { CommitteesModule } from './committees/committees.module';
 import { ProjectsModule } from './projects/projects.module';
 import { EmployeeDirectoryModule } from './employee-directory/employee-directory.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AboutUsModule } from './about-us/about-us.module';
+import { UserprofileModule } from "./userprofile/userprofile.module";
+
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthenticationService }  from './services/authentication.service';
+import { DataService }  from './services/data.service';
+import { WinAuthInterceptor }  from './interceptors/winauth-interceptor';
 
 @NgModule({
   declarations: [ 
@@ -35,9 +41,20 @@ import { AboutUsModule } from './about-us/about-us.module';
     CommitteesModule,
     ProjectsModule,
     EmployeeDirectoryModule,
-    AboutUsModule
+    AboutUsModule,
+    HttpClientModule,
+    FormsModule,
+    UserprofileModule      
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: WinAuthInterceptor,
+      multi: true
+    },
+    AuthenticationService,
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
