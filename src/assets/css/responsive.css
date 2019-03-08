@@ -1,0 +1,152 @@
+@media (max-width:767px){
+	.siteNavbar {	
+		padding: 10px 15px;
+		padding-top: 15px;
+		padding-bottom: 0px;
+	}
+	.navbar-brand img {
+		float: left;
+		width: 170px;
+		margin-top: 0px;
+		margin-left: -5px;
+	}
+	.navbar-toggle {
+        margin-right: 0;
+	}
+	.navSection {
+		height: auto;	
+		padding-bottom: 4em;
+	}
+	.masterHeadingBox h1 {
+    	font-size: 2em;
+	}
+	.freeQuoteBox {
+		padding: 20px 15px;
+		width: 100%;
+		float: none;
+		position: absolute;
+		margin-top: -112px;
+		right: 0;
+		margin-bottom: 0;
+	}
+	.masterHeadingBox h6 {
+    	font-size: 1.5em;
+		margin-top: 5px;
+	}
+	.masterHeadingBox {
+		margin-top: 10%;
+		padding-left: 15px;
+	}
+	.freeQuoteBox h4 {
+    	font-size: 20px;
+	}
+	.freeQuoteBox h6 {		
+		margin-bottom: 7px;		
+	}
+	.freeQuoteBox img {
+		right: 15px;
+		margin-top: -34px;
+	}
+	.featureSection {
+		padding: 4em 15px;
+		padding-bottom: 1.2em;
+	}
+	.aboutUsPara .para1 {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.aboutUsPara .para2 {
+		font-size: 15px;
+	}
+	.policiesSection {
+		padding: 1.4em 15px;
+	}
+	.headingBox h3 {
+        font-size: 18px;
+	}
+	.landingPolicyBox {		
+		min-height: 200px;
+		margin-bottom: 15px;
+	}
+	.landingPolicyBox .landingPolicyContent {
+		bottom: 17px;
+		left: 15px;
+	}
+	.headingBox {
+		margin-bottom: 25px;
+	}
+	.acheivementSection {
+		padding: 1.4em 15px;
+	}
+	.employeeAchievementContent h4 {
+        font-size: 16px;
+		margin-top: 18px;
+	}
+	.employeeAchievementBox {
+        min-height: 140px;
+		margin-bottom: 60px;
+	}
+	.employeeAchievementContent .imgBox {
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		background: #009881;
+		border-radius: 50%;
+		margin: 0 auto;
+		margin-bottom: 0;
+		margin-top: -67px;
+		left: 0;
+		right: 0;
+	}
+	.employeeAchievementContent img {		
+		margin-top: 17px;
+		width: 42px;
+	}
+	.winnerRow {
+		margin-top: 60px;
+	}
+	.acheivementSection .viewBtnBox{
+		margin-top: -30px;
+	}
+	.ligeGicBox {
+		margin-top: 30px;
+	}
+	.noRightPadding{
+		padding-right:15px;
+	}
+	.noLeftPadding{
+		padding-left:15px;
+	}
+	.lifeGICLeft {
+		min-height: 380px;
+		max-height: 380px;
+		background: #007ac3;
+		padding: 20px 15px;
+	}
+	.lifeGICLeft p {
+        font-size: 14px;
+	}
+	.lifeGICLeft h3 {
+        font-size: 18px;
+	}
+	.lifeGICRight .item img {
+		max-height: 200px;
+		width: 100%;
+		min-height: 200px;
+	}
+	.footer-bottom {
+		padding: 1em 15px;
+		line-height: 30px;
+	}
+	.footerTextBox {
+		text-align: center;
+	}
+	.footerTextBox ul {
+        text-align: center;
+	}
+	#back-to-top {
+    	bottom: 15px;
+		right: 15px;
+	}
+
+}
