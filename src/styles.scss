@@ -1,80 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
-// @import "./../node_modules/bootstrap/scss/bootstrap.scss";
+// /* You can add global styles to this file, and also import other style files */
+// // @import "./../node_modules/bootstrap/scss/bootstrap.scss";
 
-$nav-background-color: #ca7b00;
+// $nav-background-color: #ca7b00;
 
-.dropdown-menu > li{
-    padding: 5px 15px;
-    border-bottom: 1px solid white;
-    font-size: 20px;
-}
-.home-card-heade-text{
-    color: #85bc20;
-    font-family: FranziskaWebPro,serif;
-    font-weight: 500;
-}
+// .dropdown-menu > li{
+//     padding: 5px 15px;
+//     border-bottom: 1px solid white;
+//     font-size: 20px;
+// }
+// .home-card-heade-text{
+//     color: #85bc20;
+//     font-family: FranziskaWebPro,serif;
+//     font-weight: 500;
+// }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-    margin-top: 20px;
-    position: absolute;
-    background-color:$nav-background-color;
-    padding: 0px;
-}
+// .navbar-expand-lg .navbar-nav .dropdown-menu {
+//     margin-top: 20px;
+//     position: absolute;
+//     background-color:$nav-background-color;
+//     padding: 0px;
+// }
 
-.wk-nav-background{
-    background:$nav-background-color !important;
-    height: 50px;
-}
+// .wk-nav-background{
+//     background:$nav-background-color !important;
+//     height: 50px;
+// }
 
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-    padding-right: 20px;
-}
+// .navbar-light .navbar-nav .nav-link {
+//     color: white;
+//     padding-right: 20px;
+// }
 
-.wk-nav-links {
-    color: white !important;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-    font-family: FranziskaWebPro,serif;
-    font-size: 23px;
-}
+// .wk-nav-links {
+//     color: white !important;
+//     text-decoration: none;
+//     background-color: transparent;
+//     -webkit-text-decoration-skip: objects;
+//     font-family: FranziskaWebPro,serif;
+//     font-size: 23px;
+// }
 
-.wk-nav-sub-links {
-    color: white !important;
-    text-decoration: none;
-    background-color: transparent;
-   font-size: 14px;
-}
+// .wk-nav-sub-links {
+//     color: white !important;
+//     text-decoration: none;
+//     background-color: transparent;
+//    font-size: 14px;
+// }
 
-li{
-    padding: 0px 20px;
-}
+// li{
+//     padding: 0px 20px;
+// }
 
-.dropdown-menu{
-    min-width: 13rem !important;
-}
+// .dropdown-menu{
+//     min-width: 13rem !important;
+// }
 
-.wk-card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+// .wk-card {
+//     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     
-}
+// }
 
-wk-tile-header {
-    color: #85bc20;
-    font-size: 24px;
-    margin: 0 0 12px 0;
-    text-transform: uppercase;
-}
+// wk-tile-header {
+//     color: #85bc20;
+//     font-size: 24px;
+//     margin: 0 0 12px 0;
+//     text-transform: uppercase;
+// }
 
-.wk-flex{
-    display: flex;
-}
+// .wk-flex{
+//     display: flex;
+// }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #E5E8E8;
-    opacity: 1; /* Firefox */
-  }
+// ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+//     color: #E5E8E8;
+//     opacity: 1; /* Firefox */
+//   }
 
 
 

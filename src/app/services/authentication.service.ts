@@ -15,7 +15,6 @@ export class AuthenticationService {
   ) { }
 
   getUser(): Observable<string> {
-    console.log('Calling getUser');
     let serviceUrl: string = `${environment.serviceBaseUrl}/auth/getuser`;
     return this.http.get(serviceUrl, {responseType: 'text'})
       .map((rslt: string) =>{
