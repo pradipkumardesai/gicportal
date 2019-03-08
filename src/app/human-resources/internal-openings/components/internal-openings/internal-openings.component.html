@@ -1,5 +1,5 @@
 <button type="submit" (click)="onSubmit()"class="btn btn-success">Add New</button>
-<div>
+<!-- <div>
     <div *ngFor="let position of openPositions" class="wk-card" style="height:100px;display:flex;padding:5px;margin: 15px;background-color: #409bd2;
     color: white;">
         <div style="width:15%;padding-top: 13px;">{{position.Jobcode}}</div>
@@ -10,4 +10,34 @@
             <a href="" style="color: white;">Refer a friend</a>
         </div>        
     </div>
-</div>
+</div> -->
+
+
+<section class="detailInnerSection employeeAchievementBoxSection">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">				
+				<div class="row innerInfoRow">
+						<div *ngFor="let position of openPositions">
+							<div class="col-md-8">
+								<a href="#" routerLink="/emp-achievements-details">
+									<div class="employeeAchievementBox">
+										<div class="employeeAchievementContent">
+											<div class="imgBox">
+												<img src="../../../../../assets/img/Award.png" />
+											</div>
+											<h4>{{position.Jobcode}}</h4>
+											<h5>{{position.Designation}}</h5>
+										</div>	
+									</div>	
+								</a>
+							</div>
+						</div>  
+					
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>	
+		
+		
+	</section>

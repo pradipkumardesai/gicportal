@@ -6,6 +6,7 @@ import 'rxjs/add/operator/map';
 import { environment } from '../../environments/environment';
 
 import {IPostDataModel} from '../models/PostDataModel';
+import {AchievementModel} from '../models/AchievementModel';
 
 @Injectable(
   //{  providedIn: 'root'}
@@ -37,7 +38,7 @@ export class DataService {
       .map((rslt: string) =>{
         return rslt;
       });
-  }
+  } 
 
   getOpenPositions(): Observable<string> {
     let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetJobOpening`;
@@ -46,5 +47,20 @@ export class DataService {
         return rslt;
       });
   }
+
+
+
+
+
+
+  getAllAchievement(): Observable<Array<AchievementModel>> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/achievement/get`;
+    return this.http.get(serviceUrl, {responseType: 'json'})
+      .map((rslt: Array<AchievementModel>) =>{
+        return rslt;
+      });
+  }
+
+
 
 }
