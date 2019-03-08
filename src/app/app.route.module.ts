@@ -16,6 +16,7 @@ import { ProjectComponent } from "./projects/components/project/project.componen
 import { EmployeeDirectoryComponent } from "./employee-directory/components/employee-directory/employee-directory.component";
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { UserprofileComponent } from "./userprofile/userprofile.component";
+import { EmployeeAchievementsDetailComponent } from "./human-resources/employee-achievements-detail/employee-achievements-detail/employee-achievements-detail.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -36,7 +37,9 @@ export const routes: Routes = [
   { path: "projects/:id", component: ProjectComponent },
   { path: "emp-dir", component: EmployeeDirectoryComponent },
   { path: "about-us", component: AboutUsComponent },
-  { path: "user-profile", component: UserprofileComponent }
+  { path: "user-profile", component: UserprofileComponent },
+  { path: "emp-achievements-details", component: EmployeeAchievementsDetailComponent }
+
 ];
 
 @NgModule({
