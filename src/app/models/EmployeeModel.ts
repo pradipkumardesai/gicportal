@@ -18,41 +18,45 @@ export class EmployeeModel {
     public Imagedata: string
     public IsAdmin: boolean
 
-    constructor(
-        UserGuid: string,
-        EmployeeId: number,
-        Name: string,
-        EMailId: string,
-        SupervisorIntId: number,
-        Designation: string,
-        Role: string,
-        Summary: string,
-        DateOfBirth: string,
-        DeskNo: string,
-        Extension: string,
-        JoiningDate: string,
-        About: string,
-        Team: number,
-        Imagedata: string,
-        IsAdmin: boolean
-      ) {
-        this.UserGuid = UserGuid;
-        this.EmployeeId = EmployeeId;
-        this.Name = Name;
-        this.EMailId= EMailId;
-        this.SupervisorIntId= SupervisorIntId;
-        this.Designation= Designation;
-        this.Role= Role;
-        this.Summary= Summary;
-        this.DateOfBirth= DateOfBirth;
-        this.DeskNo= DeskNo;
-        this.Extension=Extension;
-        this.JoiningDate= JoiningDate;
-        this.About= About
-        this.Team= Team
-        this.Imagedata= Imagedata
-        this.IsAdmin= IsAdmin
-      }
+    constructor()
+    {
+      
+    }
+    // constructor(
+    //     UserGuid: string,
+    //     EmployeeId: number,
+    //     Name: string,
+    //     EMailId: string,
+    //     SupervisorIntId: number,
+    //     Designation: string,
+    //     Role: string,
+    //     Summary: string,
+    //     DateOfBirth: string,
+    //     DeskNo: string,
+    //     Extension: string,
+    //     JoiningDate: string,
+    //     About: string,
+    //     Team: number,
+    //     Imagedata: string,
+    //     IsAdmin: boolean
+    //   ) {
+    //     this.UserGuid = UserGuid;
+    //     this.EmployeeId = EmployeeId;
+    //     this.Name = Name;
+    //     this.EMailId= EMailId;
+    //     this.SupervisorIntId= SupervisorIntId;
+    //     this.Designation= Designation;
+    //     this.Role= Role;
+    //     this.Summary= Summary;
+    //     this.DateOfBirth= DateOfBirth;
+    //     this.DeskNo= DeskNo;
+    //     this.Extension=Extension;
+    //     this.JoiningDate= JoiningDate;
+    //     this.About= About
+    //     this.Team= Team
+    //     this.Imagedata= Imagedata
+    //     this.IsAdmin= IsAdmin
+    //   }
 
 
 }

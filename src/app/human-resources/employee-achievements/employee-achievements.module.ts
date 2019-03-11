@@ -4,11 +4,14 @@ import { EmployeeAchievementsComponent } from './components/employee-achievement
 import { SharedModule } from '../../shared/shared.module';
 import { RouterModule } from '@angular/router';
 
+import { CoreModule } from '../../core/core.module';
+
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    CoreModule
   ],
   exports:[EmployeeAchievementsComponent],
   declarations: [EmployeeAchievementsComponent]

@@ -1,4 +1,4 @@
-<wk-module-header headerText="Birthday's this month"></wk-module-header>
+<!-- <wk-module-header headerText="Birthday's this month"></wk-module-header>
 <div *ngFor="let policy of [1,2]" style="background-color: white;margin-bottom: 7px;padding: 0px 10px;">
     
   <div style="margin: 10px 0px 0px 10px; background-color: #f6f4f3;" class="wk-flex wk-card">
@@ -23,5 +23,49 @@
     <div style="padding: 22px;"><small style="color:#007AC3;font-size: 30px;"> Wed, Jul 20, 2016</small></div>
   </div>  
   
-</div>
+</div> -->
 
+
+<section class="detailTopSection">
+    <wk-nav-bar></wk-nav-bar>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="innerDetailHeadingBox">
+          <h3 class="committeeLandingHeading">
+            Birthdays this month
+          </h3>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  
+  </section>
+
+  <section class="detailInnerSection employeeAchievementBoxSection">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">				
+          <div class="row innerInfoRow">
+              <div *ngFor="let achievement of achievementList">
+                <div class="col-md-4">
+                  <a href="#" routerLink="/emp-achievements-details">
+                    <div class="employeeAchievementBox">
+                      <div class="employeeAchievementContent">
+                        <div class="imgBox">
+                          <img src="../../../../../assets/img/Award.png" />
+                        </div>
+                        <h4>{{this.achievement.EmployeeName}}</h4>
+                        <h5>{{this.achievement.Title}}</h5>
+                      </div>	
+                    </div>	
+                  </a>
+                </div>
+              </div>  
+            
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>	
+      
+    </section>

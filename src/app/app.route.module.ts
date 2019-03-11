@@ -12,6 +12,7 @@ import { AdminComponent } from "./help-desk/admin/components/admin/admin.compone
 import { ItSupportComponent } from "./help-desk/it-support/components/it-support/it-support.component";
 import { HotLinksComponent } from "./hot-links/components/hot-links/hot-links.component";
 import { CommitteeComponent } from "./committees/components/committee/committee.component";
+import { CommitteedetailsComponent } from "./committees/components/committeedetails/committeedetails.component";
 import { ProjectComponent } from "./projects/components/project/project.component";
 import { EmployeeDirectoryComponent } from "./employee-directory/components/employee-directory/employee-directory.component";
 import { AboutUsComponent } from "./about-us/about-us.component";
@@ -32,6 +33,7 @@ export const routes: Routes = [
   { path: "hot-links", component: HotLinksComponent },
   { path: "committees/:id", pathMatch:"full", redirectTo:"committees/food" },
   { path: "committees", component: CommitteeComponent },
+  { path: "committees-details/:id", component: CommitteedetailsComponent },
   // { path: "committees/:id", component: CommitteeComponent },
   { path: "projects", pathMatch:"full", redirectTo:"projects/axcess" },
   { path: "projects/:id", component: ProjectComponent },

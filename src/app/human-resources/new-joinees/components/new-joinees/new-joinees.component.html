@@ -1,4 +1,4 @@
-<wk-module-header headerText="New joinees"></wk-module-header>
+<!-- <wk-module-header headerText="New joinees"></wk-module-header>
 
 <div *ngFor="let policy of [1,2]" style="background-color: white;margin-bottom: 7px;padding: 0px 10px;">
     
@@ -26,4 +26,48 @@
     </div>
   </div>    
   
-</div>
+</div> -->
+
+<section class="detailTopSection">
+    <wk-nav-bar></wk-nav-bar>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="innerDetailHeadingBox">
+          <h3 class="committeeLandingHeading">
+            New Joinees
+          </h3>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  
+  </section>
+
+  <section class="detailInnerSection employeeAchievementBoxSection">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">				
+          <div class="row innerInfoRow">
+              <div *ngFor="let achievement of achievementList">
+                <div class="col-md-4">
+                  <a href="#" routerLink="/emp-achievements-details">
+                    <div class="employeeAchievementBox">
+                      <div class="employeeAchievementContent">
+                        <div class="imgBox">
+                          <img src="../../../../../assets/img/Award.png" />
+                        </div>
+                        <h4>{{this.achievement.EmployeeName}}</h4>
+                        <h5>{{this.achievement.Title}}</h5>
+                      </div>	
+                    </div>	
+                  </a>
+                </div>
+              </div>  
+            
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>	
+      
+    </section>

@@ -1,4 +1,4 @@
-<button type="submit" (click)="onSubmit()"class="btn btn-success">Add New</button>
+<!-- <button type="submit" (click)="onSubmit()" class="btn btn-success">Add New</button> -->
 <!-- <div>
     <div *ngFor="let position of openPositions" class="wk-card" style="height:100px;display:flex;padding:5px;margin: 15px;background-color: #409bd2;
     color: white;">
@@ -11,33 +11,47 @@
         </div>        
     </div>
 </div> -->
+<section class="detailTopSection">
+	<wk-nav-bar></wk-nav-bar>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="innerDetailHeadingBox">
+				<h3 class="committeeLandingHeading">
+					Internal Openings
+				</h3>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
 
+</section>
 
 <section class="detailInnerSection employeeAchievementBoxSection">
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">				
-				<div class="row innerInfoRow">
-						<div *ngFor="let position of openPositions">
-							<div class="col-md-8">
-								<a href="#" routerLink="/emp-achievements-details">
-									<div class="employeeAchievementBox">
-										<div class="employeeAchievementContent">
-											<div class="imgBox">
-												<img src="../../../../../assets/img/Award.png" />
-											</div>
-											<h4>{{position.Jobcode}}</h4>
-											<h5>{{position.Designation}}</h5>
-										</div>	
-									</div>	
-								</a>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="row innerInfoRow">
+				<div *ngFor="let position of openPositions">
+					<div class="col-md-8">
+						<a href="#" routerLink="/emp-achievements-details">
+							<div class="employeeAchievementBox">
+								<div class="employeeAchievementContent">
+									<div class="imgBox">
+										<img src="../../../../../assets/img/Award.png" />
+									</div>
+									<h4>{{position.Jobcode}}</h4>
+									<h5>{{position.Designation}}</h5>
+								</div>
 							</div>
-						</div>  
-					
+						</a>
+					</div>
 				</div>
+
 			</div>
-			<div class="col-md-2"></div>
-		</div>	
-		
-		
-	</section>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+
+
+</section>

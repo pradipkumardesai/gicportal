@@ -1,7 +1,80 @@
-<wk-module-header headerText="Downloads"></wk-module-header>
+<!-- <wk-module-header headerText="Downloads"></wk-module-header>
 <div *ngFor="let section of [1,2,3]">
   <wk-downloads-section sectionName="Expense Claim Form" sectionDescription="Process to update employee's personal detail."></wk-downloads-section>
 </div>
 
 
+ -->
+<!-- <wk-module-header headerText="New joinees"></wk-module-header>
 
+<div *ngFor="let policy of [1,2]" style="background-color: white;margin-bottom: 7px;padding: 0px 10px;">
+    
+  <div style="margin: 10px 0px 0px 10px; background-color: #f6f4f3;" class="wk-flex wk-card">
+    
+    <div style="width:100px;padding: 5px 0px 5px 5px;">
+      <div><img src="assets/images/pradip.jpg" height="75" width="75" alt=""></div>
+    </div>
+    
+    <div style="width:15%;padding-top: 10px;">
+      <div><h3 style="color: #00619c;"> Pradipkumar Desai</h3></div>
+      <div><h6>Sr. Software Engineer I</h6></div>
+    </div>
+
+    
+
+    <div style="width:10%;padding: 10px 10px">
+      <div style="border-bottom: 1px solid gray;"><h3 style="color: #85bc20;">AXCESS</h3></div>
+      <div><h6 style="color: #85bc20;">Admin Manager</h6></div>
+      
+    </div>
+
+    <div style="width:75%;padding:5px;background-color: #ca7b00;color: white;">
+      Pradipkumar has 6 years experience with various technologies like Angular, C#. Pradipkumar has 6 years experience with various technologies like Angular, C#
+    </div>
+  </div>    
+  
+</div> -->
+
+<section class="detailTopSection">
+    <wk-nav-bar></wk-nav-bar>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="innerDetailHeadingBox">
+          <h3 class="committeeLandingHeading">
+            Downloads
+          </h3>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  
+  </section>
+
+  <section class="detailInnerSection employeeAchievementBoxSection">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">				
+          <div class="row innerInfoRow">
+              <div *ngFor="let achievement of achievementList">
+                <div class="col-md-4">
+                  <a href="#" routerLink="/emp-achievements-details">
+                    <div class="employeeAchievementBox">
+                      <div class="employeeAchievementContent">
+                        <div class="imgBox">
+                          <img src="../../../../../assets/img/Award.png" />
+                        </div>
+                        <h4>{{this.achievement.EmployeeName}}</h4>
+                        <h5>{{this.achievement.Title}}</h5>
+                      </div>	
+                    </div>	
+                  </a>
+                </div>
+              </div>  
+            
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>	
+      
+    </section>

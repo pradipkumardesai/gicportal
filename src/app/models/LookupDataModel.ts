@@ -1,44 +1,26 @@
 
 export class LookupDataModel {
 
-    public Teams: Array<TeamModel>;
-    public Supervisor:  Array<SupervisorModel>;
-    
-    constructor(
-        Teams: Array<TeamModel>,
-        Supervisor: Array<SupervisorModel>
-        
-      ) {
-        this.Teams = Teams;
-        this.Supervisor = Supervisor;
-      }
+  public Teams: Array<TeamModel>;
+  public Supervisor: Array<SupervisorModel>;
+
+  constructor() {
+    // this.Teams = new Array<TeamModel>();
+    // this.Supervisor = new Array<SupervisorModel>();
+  }
 }
 class TeamModel {
+  public TeamIntId: number;
+  public Team: string;
 
-    public TeamIntId: number;
-    public Team: string;
-    
-    constructor(
-        TeamIntId: number,
-        Team: string        
-      ) {
-        this.TeamIntId = TeamIntId;
-        this.Team = Team;
-      }
+  constructor() {
+  }
 }
 
 class SupervisorModel {
+  public SupervisorIntId: number;
+  public SupervisorName: string;
 
-    public SupervisorIntId: number;
-    public SupervisorName: string;
-    
-    constructor(
-        SupervisorIntId: number,
-        SupervisorName: string        
-      ) {
-        this.SupervisorIntId = SupervisorIntId;
-        this.SupervisorName = SupervisorName;
-      }
-
-
+  constructor() {
+  }
 }

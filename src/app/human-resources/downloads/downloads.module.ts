@@ -5,10 +5,13 @@ import { SharedModule } from '../../shared/shared.module';
 import { DownloadsSectionComponent } from './components/downloads-section/downloads-section.component';
 import { DownloadLinkComponent } from './components/download-link/download-link.component';
 
+import { CoreModule } from '../../core/core.module';
+
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   exports:[DownloadsComponent],
   declarations: [DownloadsComponent, DownloadsSectionComponent, DownloadLinkComponent]

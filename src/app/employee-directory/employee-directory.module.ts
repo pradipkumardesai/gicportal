@@ -4,10 +4,13 @@ import { EmployeeDirectoryComponent } from './components/employee-directory/empl
 import { SharedModule } from '../shared/shared.module';
 import { DirectoryCardComponent } from './components/directory-card/directory-card.component';
 
+import { CoreModule } from '../core/core.module';
+
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   exports:[EmployeeDirectoryComponent],
   declarations: [EmployeeDirectoryComponent, DirectoryCardComponent]

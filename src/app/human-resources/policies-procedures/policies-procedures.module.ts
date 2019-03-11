@@ -4,10 +4,13 @@ import { PoliciesProceduresComponent } from './components/policies-procedures/po
 import { SharedModule } from '../../shared/shared.module';
 import { PoliciesProcedureService } from './services/policies-procedure.service';
 
+import { CoreModule } from '../../core/core.module';
+
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   exports:[PoliciesProceduresComponent],
   declarations: [PoliciesProceduresComponent],
