@@ -4,6 +4,8 @@ import { NgForm } from '@angular/forms';
 import { DataService }  from '../services/data.service';
 
 import { PostDataModel } from '../models/PostDataModel';
+import { EmployeeModel } from '../models/EmployeeModel';
+import { LookupDataModel } from '../models/LookupDataModel';
 
 @Component({
   selector: 'wk-userprofile',
@@ -24,10 +26,27 @@ export class UserprofileComponent implements OnInit {
   joiningdate: Date;
   about: string;
   photo: string;
- 
-  constructor( private dataSvc: DataService) { }
+
+  employee : EmployeeModel;
+  lookUpData: LookupDataModel;
+
+  constructor( private dataSvc: DataService) {
+    this.dataSvc.getEmployeeLookupData().subscribe(
+      r => {this.lookUpData = r; this.getBack = 'success';},
+      e => {console.log(e); this.getBack = 'error';}
+    );
+
+    this.dataSvc.getMyProfile().subscribe(
+      r => {this.employee = r; this.getBack = 'success';},
+      e => {console.log(e); this.getBack = 'error';}
+    );
+   }
 
   ngOnInit() {
+    
+
+
+
   }
   private postRslt: string = '';
   private postBack: string = 'grey';

@@ -4,47 +4,47 @@
 
     <table>
         <tr>
-                <td> <label for="empId">EmployeeId</label></td>
-                <td> <input type="text" class="" id="empId" disabled="disabled"></td>
-                <td><label for="name">Name</label></td>
-                <td><input type="text" class="" id="name" required></td>
+            <td><label for="empId">Employee Id</label></td>
+            <td><input type="text" class="" id="empId" disabled="disabled" value="{{employee.EmployeeId}}"></td>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" class="" id="name" value="{{employee.Name}}"></td>
         </tr>
         <tr>
-            <td> <label for="emailId">EMailId</label></td>
-            <td><input type="text" class="" id="emailId"  disabled="disabled">            </td>
-            <td><label for="supervisorId">SupervisorIntId</label></td>
-            <td><input type="text" class="" id="supervisorId"></td>
+            <td> <label for="emailId">Email Id</label></td>
+            <td><input type="text" class="" id="emailId"  disabled="disabled" value="{{employee.EMailId}}"></td>
+            <td><label for="supervisorId">Supervisor</label></td>
+            <td><input type="text" class="" id="supervisorId" value="{{employee.SupervisorIntId}}"></td>
         </tr>
         <tr>
-                <td><label for="alterEgo">Designation</label></td>
-                <td><input type="text" class="" id="designation"></td>
-                <td><label for="alterEgo">Team</label></td>
-                <td> <input type="text" class="" id="team"></td>
-            </tr>
-            <tr>
-                    <td> <label for="summary">Summary</label></td>
-                    <td><input type="text" class="" id="summary"></td>
-                    <td><label for="dob">DateOfBirth</label></td>
-                    <Td><input type="text" class="" id="dob"></Td>
-            </tr>
-            <tr>
-                <td><label for="deskno">DeskNo</label></td>
-                <td><input type="text" class="" id="deskno"></td>
-                <td><label for="ext">Extension</label></td>
-                <td><input type="text" class="" id="ext"></td>
-            </tr>
-            <tr>
-                <td><label for="joining">JoiningDate</label></td>
-                <td><input type="text" class="" id="joiningdate"></td>
-                <td><label for="about">About</label></td>
-                <td> <input type="text" class="" id="about"></td>
-            </tr>
-            <tr>
-                <td><label for="photo">Photo</label></td>
-                <td><input type="text" class="" id="photo"></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <td><label for="alterEgo">Designation</label></td>
+            <td><input type="text" class="" id="designation" value="{{employee.Designation}}"></td>
+            <td><label for="alterEgo">Team</label></td>
+            <td> <input type="text" class="" id="team" value="{{employee.Team}}"></td>
+        </tr>
+        <tr>
+            <td> <label for="summary">Summary</label></td>
+            <td><input type="text" class="" id="summary" value="{{employee.Summary}}"></td>
+            <td><label for="dob">Date Of Birth</label></td>
+            <Td><input type="text" class="" id="dob" value="{{employee.DateOfBirth}}"></Td>
+        </tr>
+        <tr>
+            <td><label for="deskno">Desk No</label></td>
+            <td><input type="text" class="" id="deskno" value="{{employee.DeskNo}}"></td>
+            <td><label for="ext">Extension</label></td>
+            <td><input type="text" class="" id="ext" value="{{employee.Extension}}"></td>
+        </tr>
+        <tr>
+            <td><label for="joining">Joining Date</label></td>
+            <td><input type="text" class="" id="joiningdate" value="{{employee.JoiningDate}}"></td>
+            <td><label for="about">About</label></td>
+            <td> <input type="text" class="" id="about" value="{{employee.About}}"></td>
+        </tr>
+        <tr>
+            <td><label for="photo">Photo</label></td>
+            <td><input type="text" class="" id="photo"></td>
+            <td></td>
+            <td></td>
+        </tr>
     </table>
     
       <button type="submit" (click)="onSubmit()"class="btn btn-success">Submit</button>

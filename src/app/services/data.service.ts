@@ -7,6 +7,8 @@ import { environment } from '../../environments/environment';
 
 import {IPostDataModel} from '../models/PostDataModel';
 import {AchievementModel} from '../models/AchievementModel';
+import { EmployeeModel } from '../models/EmployeeModel';
+import { LookupDataModel } from '../models/LookupDataModel';
 
 @Injectable(
   //{  providedIn: 'root'}
@@ -25,13 +27,21 @@ export class DataService {
       });
   }
 
-  getEmployeeLookupData(): Observable<string> {
-    let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetEmployeeLookupData`;
+  getEmployeeLookupData(): Observable<LookupDataModel> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetLookupData`;
     return this.http.get(serviceUrl, {responseType: 'json'})
-      .map((rslt: string) =>{
+      .map((rslt: LookupDataModel) =>{
         return rslt;
       });
   }
+  getMyProfile(): Observable<EmployeeModel> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetMyProfile`;
+    return this.http.get(serviceUrl, {responseType: 'json'})
+      .map((rslt: EmployeeModel) =>{
+        return rslt;
+      });
+  } 
+
   getAllEmployees(): Observable<string> {
     let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetAllEmployee`;
     return this.http.get(serviceUrl, {responseType: 'json'})
