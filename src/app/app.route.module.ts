@@ -33,14 +33,14 @@ export const routes: Routes = [
   { path: "hot-links", component: HotLinksComponent },
   { path: "committees/:id", pathMatch:"full", redirectTo:"committees/food" },
   { path: "committees", component: CommitteeComponent },
-  { path: "committees-details/:id", component: CommitteedetailsComponent },
+  { path: "committees-details/:name", component: CommitteedetailsComponent },
   // { path: "committees/:id", component: CommitteeComponent },
   { path: "projects", pathMatch:"full", redirectTo:"projects/axcess" },
   { path: "projects/:id", component: ProjectComponent },
   { path: "emp-dir", component: EmployeeDirectoryComponent },
   { path: "about-us", component: AboutUsComponent },
   { path: "user-profile", component: UserprofileComponent },
-  { path: "emp-achievements-details", component: EmployeeAchievementsDetailComponent }
+  { path: "emp-achievements-details/:guid", component: EmployeeAchievementsDetailComponent }
 
 ];
 

@@ -1,17 +1,19 @@
 
 <section class="detailTopSection">
 		<wk-nav-bar></wk-nav-bar>
-		<div class="row">
+		<div class="row">	
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-				<div class="innerDetailHeadingBox">
-					<h3 class="committeeLandingHeading">
-						{{this.id}} Committee
+				<div class="innerDetailHeadingBox">					
+					<img src="../../../../assets/img/Committee/{{this.name | lowercase}}.png"/>
+					<h3>
+						{{this.name}} Committee
 					</h3>
+					<a href="#" class="" routerLink="/committees"><button>Go back to Committee</button></a>
 				</div>
-			</div>
+			</div>			
 			<div class="col-md-2"></div>
-		</div>
+		</div>		
 	</section>
 <section class="detailInnerSection">
 		<div class="row">
@@ -22,19 +24,7 @@
 					<li class=""><a href="#tab2"><i class="material-icons">group</i> Members</a></li>
 				</ul>
 				<div class="tab-content innerTabContent">
-					<div id="tab1" class="tab-pane fade in active">
-						<p>
-							The purpose of Food Committee is to;
-						</p>
-						<ul>
-							<li>Listen to requirements/suggestions regarding food from teams.</li>
-							<li>Access the quality and quantity of food provided by vendor from time to time.</li>
-							<li>Make recommendations to Vendor.</li>
-							<li>Organize meetings with the vendor and give feedback.</li>
-							<li>Follow-up with vendor regarding suggestions and recommendations.</li>
-							<li>In case change in vendor is required, to handle the entire process from finding new vendor to getting vendor on board.</li>
-							<li>Manage internal communications regarding Food Committee updates/activities.</li>
-						</ul>
+					<div id="tab1" class="tab-pane fade in active" [innerHTML]="commitee.CommitteeDetails">						
 					</div>
 					<div id="tab2" class="tab-pane fade in">
 						<p>

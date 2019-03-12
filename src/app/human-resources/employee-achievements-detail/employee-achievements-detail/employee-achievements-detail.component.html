@@ -1,3 +1,21 @@
+<section class="detailTopSection">
+    <wk-nav-bar></wk-nav-bar>  
+	<div class="row">	
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="innerDetailHeadingBox">					
+				<img src="../../../../assets/img/Award.png"/>
+				<h3>
+					{{achievement.EmployeeName}}, <span>"{{achievement.Title}}"</span>
+				</h3>
+				<a href="#" routerLink="/emp-achievements"><button>Go back to Achievements</button></a>
+			</div>
+		</div>			
+		<div class="col-md-2"></div>
+	</div>   
+
+</section>
+
 <section class="detailInnerSection">
 		<div class="row">
 			<div class="col-md-2"></div>
@@ -5,7 +23,7 @@
 				<div class="policiesInnerDetailContent">
 					<div class="content">
 						<p>
-							Although a new joinee to Wolters Kluwer, Vaibhav has quickly picked up the Code, business logic & processes and became dependable resource for the team. He was instrumental in making a timely delivery for Portalsafe to iFirm migration tool. He is always ready to go extra mile to ensure quality and timely delivery. He is always focused on his assignment and handles it with maturity. Vaibhav is passionate about his work and takes ownership in task assigned to him and ensures that it is delivered with quality and in time. His unique blend of technical capabilities and excellent attitude is asset to the team.
+							{{achievement.Comment}}
 						</p>
 					</div>
 				</div>
