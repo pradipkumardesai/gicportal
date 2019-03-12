@@ -1,20 +1,265 @@
 <section class="detailTopSection">
     <wk-nav-bar></wk-nav-bar>
+    <div class="row">	
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="profileDetailHeadingBox">					
+                <img src="../../assets/img/user.png"/>
+                <h3>
+                    {{employee.Name}}
+                </h3>
+                <h5>{{employee.EmailId}}</h5>
+                
+            </div>
+        </div>			
+        <div class="col-md-2"></div>
+    </div>
+</section>
+
+<section class="detailInnerSection profileInnerSection">
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <div class="innerDetailHeadingBox">
-                <h3 class="committeeLandingHeading">
-                    {{employee.Name}}
-                </h3>
+            <ul class="nav nav-tabs profileTabs">
+                <li class="active"><a href="#tab1"><i class="material-icons">info</i> Primary Information</a></li>
+                <!--<li class=""><a href="#tab2"><i class="material-icons">assignment</i> My Tasks</a></li>-->
+                <li class=""><a href="#tab3"><i class="material-icons">list</i> My Activities</a></li>
+            </ul>
+            <div class="tab-content innerTabContent">
+                
+                <div id="tab1" class="tab-pane fade in active">
+                    <div class="tabContentBox">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Designation</h5>
+                                    <h4>{{employee.Designation}}</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Location</h5>
+                                    <h4>Pune GIC</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Department</h5>
+                                    <h4>TAA</h4>
+                                </div>
+                            </div>								
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Contact No</h5>
+                                    <h4>8412048987</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Joining Date</h5>
+                                    <h4>{{employee.JoiningDate |date :'MM/dd/yyyy'}}</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Reports to</h5>
+                                    <h4>Chintan Dalwadi</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Desk No</h5>
+                                    <h4>F1-B-62</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Active Projects</h5>
+                                    <h4>4</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="genInfoBox">
+                                    <h5>Committee</h5>
+                                    <h4>Sports</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--
+                <div id="tab2" class="tab-pane fade in">
+                    <div class="taskBox">
+                        <h4>Active Projects</h4>
+                        <div class="row">
+                        
+                            <div class="col-md-3">
+                                <div class="projInfoBox">
+                                    <div class="projInfoBoxHeader">
+                                        K1-Bot
+                                    </div>
+                                    <div class="projInfoBoxFooter">
+                                        Iteration 1 <span><i class="material-icons">format_list_bulleted</i> 4 Tasks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="projInfoBox">
+                                    <div class="projInfoBoxHeader">
+                                        TeamMate
+                                    </div>
+                                    <div class="projInfoBoxFooter">
+                                        Iteration 2 <span><i class="material-icons">format_list_bulleted</i> 12 Tasks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="projInfoBox">
+                                    <div class="projInfoBoxHeader">
+                                        CodeGames 2019
+                                    </div>
+                                    <div class="projInfoBoxFooter">
+                                        Iteration 4 <span><i class="material-icons">format_list_bulleted</i> 8 Tasks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="projInfoBox">
+                                    <div class="projInfoBoxHeader">
+                                        GIC Portal Revamp
+                                    </div>
+                                    <div class="projInfoBoxFooter">
+                                        Iteration 3 <span><i class="material-icons">format_list_bulleted</i> 4 Tasks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="taskBox taskBoxContainer">
+                        <h4>Tasks</h4>
+                        
+                        <div class="taskItemContainer">
+                            
+                            <div class="taskItem completedBorder">
+                                <h4>Show GIC Portal design demo to the team</h4>
+                                <h5>Project: GIC Portal Revamp</h5>
+                                <span class="taskStatusSpan completed">Completed</span>
+                            </div>
+                            <div class="taskItem inProgressBorder">
+                                <h4>Show K1-Bot design demo to the team</h4>
+                                <h5>Project: K1-Bot</h5>
+                                <span class="taskStatusSpan InProgress">In-Progress</span>
+                            </div>
+                            <div class="taskItem pendingBorder">
+                                <h4>Create documents for TeamMate releases.</h4>
+                                <h5>Project: TeamMate</h5>
+                                <span class="taskStatusSpan pending">Pending</span>
+                            </div>
+                            <div class="taskItem completedBorder">
+                                <h4>Show GIC Portal design demo to the team</h4>
+                                <h5>Project: GIC Portal Revamp</h5>
+                                <span class="taskStatusSpan completed">Completed</span>
+                            </div>
+                            <div class="taskItem inProgressBorder">
+                                <h4>Show K1-Bot design demo to the team</h4>
+                                <h5>Project: K1-Bot</h5>
+                                <span class="taskStatusSpan InProgress">In-Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <div id="tab3" class="tab-pane fade in">
+                    <div class="activityContentBox">
+                        <table class="activityTable">
+                            <tr>
+                                <td>3 March</td>
+                                <td>
+                                    <div class="activityBubble activityBubbleGreen"></div>
+                                </td>
+                                <td>
+                                    New document uploaded on One Drive for project K1-Bot.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 March</td>
+                                <td>
+                                    <div class="activityBubble activityBubblePurple"></div>
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore  agna elit enim at minim veniam quis nostrud
+                                </td>									
+                            </tr>
+                            <tr>
+                                <td>27 Feb</td>
+                                <td>
+                                    <div class="activityBubble activityBubbleBlue"></div>
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt
+                                </td>									
+                            </tr>
+                            <tr>
+                                <td>25 Feb</td>
+                                <td>
+                                    <div class="activityBubble activityBubbleRed"></div>
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore  agna elit enim 
+                                </td>									
+                            </tr>
+                            <tr>
+                                <td>22 Feb</td>
+                                <td>
+                                    <div class="activityBubble activityBubbleGreen"></div>
+                                </td>
+                                <td>
+                                    New document uploaded on One Drive for project K1-Bot.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18 Feb</td>
+                                <td>
+                                    <div class="activityBubble activityBubblePurple"></div>
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore  agna elit enim at minim veniam quis nostrud
+                                </td>									
+                            </tr>
+                            <tr>
+                                <td>12 Feb</td>
+                                <td>
+                                    <div class="activityBubble activityBubbleBlue"></div>
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt
+                                </td>									
+                            </tr>
+                            <tr>
+                                <td>6 Feb</td>
+                                <td>
+                                    <div class="activityBubble activityBubbleRed"></div>
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore  agna elit enim 
+                                </td>									
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-2"></div>
     </div>
-
+    
+    
+    
 </section>
 
-<div style="margin:10px; width: 42%;font-size: 20px;padding-left: 0px;">
+<!-- <div style="margin:10px; width: 42%;font-size: 20px;padding-left: 0px;">
 
     <form>
 
@@ -77,4 +322,4 @@
 
     </form>
 
-</div>
+</div> -->

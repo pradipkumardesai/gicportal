@@ -76,7 +76,7 @@ body{
 }
 .navSection{
 	height:100vh;
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/back\ \(2\).JPG');
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/back (2).jpg');
 	background-size:cover;
 	/*padding: 0 3em;*/
 }
@@ -119,7 +119,7 @@ body{
 }
 .masterHeadingBox h6{	
 	color: #ffffff;
-    font-size: 2.8em;
+    font-size: 3em;
     margin-top: 0;
     letter-spacing: 0px;
     margin-top: 25px;
@@ -235,11 +235,12 @@ body{
 .freeQuoteBox h6{
 	color: #fff;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 0;
     letter-spacing: 2px;
     margin-bottom: 18px;
 	font-weight: 500;
+	font-family: Poppins;
 }
 .freeQuoteBox h4{
 	color: #fff;
@@ -523,7 +524,7 @@ body{
 }
 .headingBox h3 {
     letter-spacing: 0px;
-    font-family: Playfair Display;
+    font-family: Poppins;
     margin-bottom: 15px;
     line-height: 1.6em;
     font-size: 24px;
@@ -542,14 +543,15 @@ body{
 .landingPolicyBox{
 	padding: 15px;
     background: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);*/
 	border-radius:4px;
 	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url(../img/policyback.png);
 	background-repeat:no-repeat;
 	background-size:cover;
-	min-height:250px;
+	min-height:200px;
 	margin-bottom:30px;
 	position: relative;
+	box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
 }
 .landingPolicyBox .landingPolicyContent{
 	position: absolute;
@@ -560,11 +562,11 @@ body{
 	color: #fff;
     margin-top: 0;
     font-weight: 500;
-    font-size: 18px;
-    /*font-family: Playfair Display;*/
+    font-size: 17px;
+    font-family: Poppins;
 } 
 .landingPolicyBox .landingPolicyContent h5{
-	color: #fff;
+	color: #dedede;
     margin-top: 0;
     font-weight: 300;
     font-size: 13px;
@@ -573,7 +575,7 @@ body{
 } 
 .landingPolicyBox .landingPolicyContent h6{
 	color: #d4d4d4;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 0;
     font-style: italic;
     font-weight: 300;
@@ -625,8 +627,8 @@ body{
 	color: #3c3c3c;
     margin-top: 0;
     font-weight: 600;
-    font-size: 18px;
-    /*font-family: Playfair Display;*/
+    font-size: 16px;
+	font-family: Poppins;
 	margin-bottom: 22px;
 }
 .employeeAchievementContent h5{
@@ -690,7 +692,7 @@ body{
 }
 .lifeGICLeft h3 {
     letter-spacing: 0px;
-    font-family: Playfair Display;
+    font-family: Poppins;
     margin-bottom: 20px;
     font-size: 24px;
     margin-top: 0%;
@@ -739,7 +741,7 @@ body{
     font-weight: 400;
     margin-bottom: 0;
     line-height: 1.2em;
-    font-family: Playfair Display;
+    font-family: Poppins;
     text-shadow: 1px 1px #333333;
 }
 .innerDetailHeadingBox button{
@@ -814,7 +816,7 @@ body{
 	font-size: 22px;
 }
 .landingPolicyBoxDetail{
-	min-height:210px!important;
+	min-height:142px!important;
 }
 .landingPolicyBoxDetail .landingPolicyContent {
     position: absolute;
@@ -881,6 +883,313 @@ body{
 }
 @media (min-width:1400px) and (max-width:1599px){
 	.masterHeadingBox {
-		margin-top: 23%;
+		margin-top: 16%;
 	}
+}
+.projectBox{
+	padding: 25px;
+    background: #fff;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    border-radius: 4px;
+    min-height: 181px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.projectBox h4{
+	color: #007ac3;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 17px;
+	font-family: Poppins;
+}
+.projectBox h4 span{
+	color: #383838;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 11px;
+    float: right;
+    background: #ebebeb;
+    border-radius: 25px;
+    padding: 5px 15px 4px 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.projectBox p {
+    font-size: 15px;
+    color: #474747;
+    font-weight: 300;
+	margin-top: 20px;
+    line-height: 1.6em;
+}
+.masterAnnouncementContainer{
+	background-color: rgba(29, 29, 29, 0.5);
+    padding: 10px 15px;
+	margin-top: 7em;
+}
+.masterAnnouncementBox h5{
+	color: #85bc20;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 0;
+    text-transform: uppercase;
+	margin-bottom: 5px;
+	text-align:center;
+}
+.masterAnnouncementBox p{
+	margin-bottom: 0;
+    color: #e0e0e0;
+    font-size: 12px;
+	text-align:center;
+	width:80%;
+	margin:0 auto;
+}
+
+.profileDetailHeadingBox {
+    text-align: center;
+    margin-top: 7px;
+}
+.profileDetailHeadingBox img{
+	width: 110px;
+    padding: 5px;
+    background: #fdfdfd;
+    border-radius: 50%;	
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+.profileDetailHeadingBox h3{
+	letter-spacing: 0px;
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    font-size: 28px;
+    margin-top: 5px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+.profileDetailHeadingBox h5{
+	font-weight: 300;
+    color: #ececec;
+    font-size: 16px;
+    margin-top: -8px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.profileTabs>li {
+    width: 50%;
+}
+.profileTabs>li>a {
+    text-align:center;
+}
+.profileTabs{
+	margin-top:0px;
+	margin-bottom:20px!important;
+}
+.profileTabs li a{	
+    font-size: 13px;
+    color: #525151!important;
+    border-color: transparent!important;
+    text-transform: uppercase;
+    background: transparent!important;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.profileTabs li a:hover{
+	background:transparent!important;
+	color:#007ac3!important;
+}
+.profileTabs>li.active>a{
+	border-color: transparent!important;
+    border-bottom: 3px solid #007ac3!important;
+    cursor: pointer!important;
+    color: #007ac3!important;
+}
+.profileTabs li a i{
+	vertical-align: middle!important;
+    font-size: 21px;
+    margin-top: -1px;
+    margin-right: 5px;
+}
+.profileInnerSection{
+	padding-top:2em;
+	padding-bottom:2em;
+}
+
+.tabContentBox{
+	padding:30px;
+	padding-top:0;
+	background:#f9f9f9;
+    border-radius: 4px;
+}
+.genInfoBox{
+	margin-top:30px;
+}
+.genInfoBox h4{
+	margin-bottom: 0;
+    margin-top: -3px;
+    color: #6f6f6f;
+    font-weight: 400;
+    font-size: 16px;
+}
+.genInfoBox h5{
+	color: #333;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+.taskBox h4{
+	margin-top: 0;
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+.projInfoBox{
+	border:1px solid #e5e5e5;
+	border-radius:4px;
+}
+.projInfoBox .projInfoBoxHeader{
+	padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #6f6f6f;
+    font-weight: 600;
+    min-height: 70px;
+    padding-top: 24px;
+    font-family: Poppins;
+}
+.projInfoBox .projInfoBoxFooter{
+	background: #f9f9f9;
+    padding: 10px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+}
+.projInfoBox .projInfoBoxFooter span{
+	float:right;
+	font-weight: 600;
+}
+.projInfoBox .projInfoBoxFooter span i{
+	vertical-align:middle;
+	font-size:18px;
+}
+.taskBox{
+	margin-top:35px;
+}
+.taskBoxContainer{
+	margin-top:35px;
+}
+
+.taskItem{
+	padding:15px 15px;
+	border:1px dotted #ddd;
+	border-radius:4px;
+	margin-bottom:15px;
+}
+.completedBorder{
+	border-left:4px solid #009881;
+}
+.inProgressBorder{
+	border-left:4px solid #af4995;
+}
+.pendingBorder{
+	border-left:4px solid #ec5862;
+}
+.taskItem h4{
+	color: #3f4047;
+	margin-top:0;
+	font-family:Poppins;
+	font-size:14px;
+}
+.taskItem h5{
+	color: #8e8f90;
+    /* text-transform: uppercase; */
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 13.5px;
+}
+.taskStatusSpan{
+	float: right;
+    margin-top: -32px;
+    font-weight: 700;
+    font-size: 11px;
+    border-radius: 25px;
+    padding: 5px 15px 4px 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+	min-width: 105px;
+    text-align: center;
+}
+.taskItem span.completed{
+	border:1px dotted #009881;
+	color:#009881;
+}
+.taskItem span.InProgress{
+	border:1px dotted #af4995;
+	color:#af4995;
+}
+.taskItem span.pending{
+	border:1px dotted #ec5862;
+	color:#ec5862;
+}
+
+.activityContentBox {
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 4px;
+	padding-bottom: 18px;
+}
+
+.activityBubble{
+	width:15px;
+	height:15px;
+	background:#fff;
+	border-radius:50%;
+	position: relative;
+}
+.activityBubbleGreen{
+	border:3px solid #009881;
+}
+.activityBubblePurple{
+	border:3px solid #af4995;
+}
+.activityBubbleBlue{
+	border:3px solid #007ac3;
+}
+.activityBubbleRed{
+	border:3px solid #ec5862;
+}
+
+.activityTable tr td{
+	padding:5px 15px;
+	font-size:13px;
+	color:#4c4c4c;
+	padding-bottom:20px;
+	vertical-align:middle!important;
+}
+.activityTable tr td:first-child{	
+    color: #333;
+    font-weight: 600;
+	font-family:Poppins;
+	font-size:14px;
+	min-width: 100px;
+	text-align:right;
+}
+.activityTable tr td:nth-child(2){
+	min-width: 50px;
+	position:relative;
+}
+.activityTable tr td:nth-child(3){
+	
+}
+.activityTable tr td:nth-child(2):before {
+    height: 120%;
+    width: 3px;
+    background: #ddd;
+    position: absolute;
+    content: '';
+    left: 21px;
+    margin-top: -18px;
 }
