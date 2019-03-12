@@ -47,16 +47,16 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">				
           <div class="row innerInfoRow">
-              <div *ngFor="let achievement of achievementList">
+              <div *ngFor="let emp of bdayList">
                 <div class="col-md-4">
-                  <a href="#" routerLink="/emp-achievements-details">
+                   <a href="#" ><!--routerLink="/emp-achievements-details"> -->
                     <div class="employeeAchievementBox">
                       <div class="employeeAchievementContent">
                         <div class="imgBox">
                           <img src="../../../../../assets/img/Award.png" />
                         </div>
-                        <h4>{{this.achievement.EmployeeName}}</h4>
-                        <h5>{{this.achievement.Title}}</h5>
+                        <h4>{{this.emp.Name}}</h4>
+                        <h5>{{this.emp.DateOfBirth | date:'MM/dd/yyyy'}}</h5>
                       </div>	
                     </div>	
                   </a>

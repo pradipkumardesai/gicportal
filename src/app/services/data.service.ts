@@ -42,6 +42,23 @@ export class DataService {
       });
   } 
 
+  getNewJoinees(): Observable<Array<EmployeeModel>> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetNewJoiness`;
+    return this.http.get(serviceUrl, {responseType: 'json'})
+      .map((rslt: Array<EmployeeModel>) =>{
+        return rslt;
+      });
+  }
+  
+  getBdayThisMonth(): Observable<Array<EmployeeModel>> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetBirthdaysThisMonth`;
+    return this.http.get(serviceUrl, {responseType: 'json'})
+      .map((rslt: Array<EmployeeModel>) =>{
+        return rslt;
+      });
+  }
+
+
   getAllEmployees(): Observable<string> {
     let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetAllEmployee`;
     return this.http.get(serviceUrl, {responseType: 'json'})

@@ -4,7 +4,7 @@ export class EmployeeModel {
     public UserGuid: string;
     public EmployeeId: number;
     public Name: string;
-    public EMailId: string;
+    public EmailId: string;
     public SupervisorIntId: number;
     public Designation: string
     public Role: string
@@ -26,7 +26,7 @@ export class EmployeeModel {
     //     UserGuid: string,
     //     EmployeeId: number,
     //     Name: string,
-    //     EMailId: string,
+    //     EmailId: string,
     //     SupervisorIntId: number,
     //     Designation: string,
     //     Role: string,
@@ -43,7 +43,7 @@ export class EmployeeModel {
     //     this.UserGuid = UserGuid;
     //     this.EmployeeId = EmployeeId;
     //     this.Name = Name;
-    //     this.EMailId= EMailId;
+    //     this.EmailId= EmailId;
     //     this.SupervisorIntId= SupervisorIntId;
     //     this.Designation= Designation;
     //     this.Role= Role;

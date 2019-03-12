@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../../../services/data.service';
+import { EmployeeModel } from '../../../../models/EmployeeModel';
 
 @Component({
   selector: 'wk-new-joinees',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewJoineesComponent implements OnInit {
 
-  constructor() { }
+  newJoineeList: Array<EmployeeModel> = new Array<EmployeeModel>();
+
+  private postRslt: string = '';
+  private postBack: string = 'grey';
+  private getRslt: string = '';
+  private getBack: string = 'grey';
+  constructor(private dataSvc: DataService) { }
 
   ngOnInit() {
+    this.dataSvc.getBdayThisMonth().subscribe(
+      r => { this.newJoineeList = r; this.getBack = 'success'; },
+      e => { console.log(e); this.getBack = 'error'; }
+    );
   }
-
 }
