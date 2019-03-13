@@ -18,6 +18,7 @@ import { EmployeeDirectoryComponent } from "./employee-directory/components/empl
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { UserprofileComponent } from "./userprofile/userprofile.component";
 import { EmployeeAchievementsDetailComponent } from "./human-resources/employee-achievements-detail/employee-achievements-detail/employee-achievements-detail.component";
+import { AdminManagerComponent } from "./admin-manager/admin-manager.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -40,6 +41,7 @@ export const routes: Routes = [
   { path: "emp-dir", component: EmployeeDirectoryComponent },
   { path: "about-us", component: AboutUsComponent },
   { path: "user-profile", component: UserprofileComponent },
+  { path: "super-admin", component: AdminManagerComponent },
   { path: "emp-achievements-details/:guid", component: EmployeeAchievementsDetailComponent }
 
 ];

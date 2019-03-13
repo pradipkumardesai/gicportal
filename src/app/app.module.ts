@@ -21,15 +21,19 @@ import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common
 import { AuthenticationService }  from './services/authentication.service';
 import { DataService }  from './services/data.service';
 import { WinAuthInterceptor }  from './interceptors/winauth-interceptor';
+import { AdminManagerComponent } from './admin-manager/admin-manager.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [ 
-    AppComponent
+    AppComponent,
+    AdminManagerComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRouteModule,
+    NgbModule.forRoot(),
     CoreModule,
     SharedModule,
     HomeModule,
