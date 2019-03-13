@@ -10,6 +10,7 @@ import { AchievementModel } from '../models/AchievementModel';
 import { EmployeeModel } from '../models/EmployeeModel';
 import { LookupDataModel } from '../models/LookupDataModel';
 import { CommiteeModel } from '../models/CommiteeModel';
+import { PolicyModel } from '../models/PolicyModel';
 
 @Injectable(
   //{  providedIn: 'root'}
@@ -104,6 +105,14 @@ export class DataService {
         return rslt;
       });
   }
-  
+
+
+  getAllPolicies(): Observable<Array<PolicyModel>> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/get/`;
+    return this.http.get(serviceUrl, { responseType: 'json' })
+      .map((rslt: Array<PolicyModel>) => {
+        return rslt;
+      });
+  }
 
 }

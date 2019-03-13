@@ -20,7 +20,7 @@ export class EmployeeAchievementsComponent implements OnInit {
   constructor(private dataSvc: DataService) { }
 
   ngOnInit() {
-    var result = this.dataSvc.getAllAchievement().subscribe(
+    this.dataSvc.getAllAchievement().subscribe(
       r => {this.achievementList = r; this.getBack = 'success';},
       e => {console.log(e); this.getBack = 'error';}
     );
