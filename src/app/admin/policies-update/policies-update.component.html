@@ -6,7 +6,7 @@
 		<div class="col-md-8">
 			<div class="innerDetailHeadingBox">
 				<h3 class="committeeLandingHeading">
-					Add Or Update Policies &amp; Procedures
+					Add/Update Policies &amp; Procedures
 				</h3>
 			</div>
 		</div>
@@ -22,19 +22,21 @@
         
         <form>
           <div class="form-group">
-            <label for="exampleFormControlInput1">Policy Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example:WFH " ><!--[ng-model]="policy.PoliciesProcedureName"> -->
+            <label for="policyName">Policy Name</label>
+            <input type="email" class="form-control" id="policyName" placeholder="example:WFH " 
+            [(ngModel)]="this.policy.PoliciesProcedureName" name="PoliciesProcedureName">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Policy Summary</label>            
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" ><!--[ng-model]="policy.PoliciesProcedureDetails"> -->
-          </div>
-          
+            <label for="policySummary">Policy Summary</label>            
+            <input type="email" class="form-control" id="policySummary" placeholder="example: policy details" 
+            [(ngModel)]="this.policy.PoliciesProcedureDetails"  name="PoliciesProcedureDetails">
+          </div>          
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Policy Details</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea><!--[ng-model]="policy.PoliciesFullDetails"></textarea>-->
+            <label for="policyDetail">Policy Details</label>
+            <textarea class="form-control" id="policyDetail" rows="3" 
+            [(ngModel)]="this.policy.PoliciesFullDetails" name="PoliciesFullDetails"></textarea>
           </div>
-          <button class="btn btn-primary" type="submit" ng-click="">Submit</button>
+          <button class="btn btn-primary" type="submit" (click)="save()">Submit</button>
         </form>
 
 			</div>

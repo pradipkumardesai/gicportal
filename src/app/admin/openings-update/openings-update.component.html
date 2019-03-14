@@ -6,7 +6,7 @@
 		<div class="col-md-8">
 			<div class="innerDetailHeadingBox">
 				<h3 class="committeeLandingHeading">
-					Add Or Update Openings
+					Add/Update Openings
 				</h3>
 			</div>
 		</div>
@@ -22,22 +22,22 @@
         
         <form>
           <div class="form-group">
-            <label for="exampleFormControlInput1">Job Code</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Jobcode" ><!-- ng-model="{{job.Jobcode}}"> -->
+            <label for="Jobcode">Job Code</label>
+            <input type="text" class="form-control" id="jobCode" placeholder="Jobcode" [(ngModel)]="job.Jobcode" name="Jobcode">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Designation</label>            
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Designation"  ><!-- ng-model="{{job.Designation}}"> -->
+            <label for="designation">Designation</label>            
+            <input type="text" class="form-control" id="designation" placeholder="Designation"  [(ngModel)]="job.Designation" name="Designation">
           </div>          
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Skills</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+            <label for="skills">Skills</label>
+            <textarea class="form-control" id="skills" rows="3"   [(ngModel)]="job.Skills" name="Skills"></textarea>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Experience</label>            
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Experience"  ><!--  ng-model="{{job.Experience}}"> -->
+            <label for="experience">Experience</label>            
+            <input type="text" class="form-control" id="experience" placeholder="Experience" [(ngModel)]="job.Experience" name="Experience">
           </div>
-          <button class="btn btn-primary" type="submit" ng-click="">Submit</button>
+          <button class="btn btn-primary" type="submit" (click)="save()">Submit</button>
         </form>
 
 			</div>

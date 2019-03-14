@@ -23,13 +23,11 @@ import { DataService } from './services/data.service';
 import { WinAuthInterceptor } from './interceptors/winauth-interceptor';
 import { AdministratorModule } from './admin/administrator.module';
 
-import { AdminManagerComponent } from './admin-manager/admin-manager.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [ 
-    AppComponent,
-    AdminManagerComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

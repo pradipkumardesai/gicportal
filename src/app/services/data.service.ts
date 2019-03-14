@@ -72,7 +72,7 @@ export class DataService {
   }
 
   getOpenPositions(): Observable<string> {
-    let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetJobOpening`;
+    let serviceUrl: string = `${environment.serviceBaseUrl}/job/get`;
     return this.http.get(serviceUrl, { responseType: 'json' })
       .map((rslt: string) => {
         return rslt;
@@ -131,13 +131,26 @@ export class DataService {
         return rslt;
       });
   }
-
   saveJobOpening(jobModel: JobOpeningsModel): Observable<string> {
-    let serviceUrl: string = `${environment.serviceBaseUrl}/jobopening/save/`;
+    let serviceUrl: string = `${environment.serviceBaseUrl}/job/save/`;
     return this.http.post(serviceUrl, jobModel, { responseType: 'text' })
       .map((rslt: string) => {
         return rslt;
       });
   }
-
+  saveAchievement(paramModel: AchievementModel): Observable<string> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/achievement/save/`;
+    return this.http.post(serviceUrl, paramModel, { responseType: 'text' })
+      .map((rslt: string) => {
+        return rslt;
+      });
+  }
+  
+  saveEmployeeData(paramModel: EmployeeModel): Observable<string> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/user/save/`;
+    return this.http.post(serviceUrl, paramModel, { responseType: 'text' })
+      .map((rslt: string) => {
+        return rslt;
+      });
+  }
 }

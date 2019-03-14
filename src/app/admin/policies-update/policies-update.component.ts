@@ -20,10 +20,13 @@ export class PoliciesUpdateComponent implements OnInit {
   }
 
   ngOnInit() {
-    var result = this.dataSvc.savePolicyDetails(this.policy).subscribe(
+
+  }
+  
+  save() {
+    this.dataSvc.savePolicyDetails(this.policy).subscribe(
       r => { this.postRslt = r; this.getBack = 'success'; },
       e => { console.log(e); this.getBack = 'error'; }
     );
   }
-
 }

@@ -5,7 +5,7 @@
     <div class="col-md-8">
       <div class="innerDetailHeadingBox">
         <h3 class="committeeLandingHeading">
-          Add Or Update Employee
+          Add/Update Employee
         </h3>
       </div>
     </div>
@@ -14,143 +14,132 @@
 
 </section>
 <section class="detailInnerSection">
-
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlInput1">EmployeeId</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EmployeeId">
-        <!-- ng-model="{{job.Jobcode}}"> -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">Name</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-        <!-- ng-model="{{job.Designation}}"> -->
-      </div>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlInput1">EmailId</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EmailId">
-        <!-- ng-model="{{job.Jobcode}}"> -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">Designation</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Designation">
-        <!-- ng-model="{{job.Designation}}"> -->
-      </div>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlInput1">EmployeeId</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EmployeeId">
-        <!-- ng-model="{{job.Jobcode}}"> -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">ContactNo</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ContactNo">
-        <!-- ng-model="{{job.Designation}}"> -->
-      </div>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Supervisor</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Supervisor">
-        <!-- ng-model="{{job.Jobcode}}"> -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">DateOfBirth</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="DateOfBirth">
-        <!-- ng-model="{{job.Designation}}"> -->
-      </div>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlInput1">DeskNo</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="DeskNo">
-        <!-- ng-model="{{job.Jobcode}}"> -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">Extension</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Extension">
-        <!-- ng-model="{{job.Designation}}"> -->
-      </div>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Team</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Team">
-            <!-- ng-model="{{job.Jobcode}}"> -->
-          </div>
-    </div>
-    <div class="col-md-4">
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">JoiningDate</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="JoiningDate">
-            <!-- ng-model="{{job.Designation}}"> -->
-          </div>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-  <div class="row">
+  <form>
+    <div class="row">
       <div class="col-md-2"></div>
-      <div class="col-md-8">
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Summary</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Summary">
-              <!--  ng-model="{{job.Experience}}"> -->
-            </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="EmployeeId">Employee Id</label>
+          <input type="email" class="form-control" id="EmployeeId" placeholder="Employee Id"
+            [(ngModel)]="paramModel.EmployeeId" name="EmployeeId">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="Name">Name</label>
+          <input type="email" class="form-control" id="Name" placeholder="Name" [(ngModel)]="paramModel.Name"
+            name="Name">
+        </div>
       </div>
       <div class="col-md-2"></div>
     </div>
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <form>          
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="EmailId">Email Id</label>
+          <input type="email" class="form-control" id="EmailId" placeholder="Email Id" [(ngModel)]="paramModel.EmailId"
+            name="EmailId">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="Designation">Designation</label>
+          <input type="email" class="form-control" id="Designation" placeholder="Designation"
+            [(ngModel)]="paramModel.Designation" name="Designation">
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="DateOfBirth">Date Of Birth</label>
+          <input type="email" class="form-control" id="DateOfBirth" placeholder="Date Of Birth"
+            [(ngModel)]="paramModel.DateOfBirth" name="DateOfBirth">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="ContactNo">Contact No</label>
+          <input type="email" class="form-control" id="ContactNo" placeholder="Contact No"
+            [(ngModel)]="paramModel.ContactNo" name="ContactNo">
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="Supervisor">Supervisor</label>
+          <input type="email" class="form-control" id="Supervisor" placeholder="Supervisor"
+            [(ngModel)]="paramModel.SupervisorIntId" name="Supervisor">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="Team">Team</label>
+          <input type="email" class="form-control" id="Team" placeholder="Team" [(ngModel)]="paramModel.ContactNo"
+            name="ContactNo">
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="DeskNo">Desk No</label>
+          <input type="email" class="form-control" id="DeskNo" placeholder="Desk No" [(ngModel)]="paramModel.DeskNo"
+            name="DeskNo">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="Extension">Extension</label>
+          <input type="email" class="form-control" id="Extension" placeholder="Extension"
+            [(ngModel)]="paramModel.ContactNo" name="ContactNo">
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="JoiningDate">Joining Date</label>
+          <input type="email" class="form-control" id="JoiningDate" placeholder="Joining Date"
+            [(ngModel)]="paramModel.JoiningDate" name="JoiningDate">
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="Summary">Summary</label>
+          <textarea type="email" class="form-control" id="Summary" placeholder="Summary"
+            [(ngModel)]="paramModel.Summary" name="Summary">
+            </textarea>
+        </div>
+      </div>
+        <div class="col-md-4">
           <div class="form-group">
-            <label for="exampleFormControlSelect1">About</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Experience">
-            <!--  ng-model="{{job.Experience}}"> -->
+            <label for="About">About</label>
+            <textarea type="email" class="form-control" id="About" placeholder="About" [(ngModel)]="paramModel.About"
+              name="About">
+            </textarea>
           </div>
-          <button class="btn btn-primary" type="submit" ng-click="">Submit</button>
-        </form>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
+          <button class="btn btn-primary" type="submit" (click)="save()">Submit</button>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
 
-
+    </form>
 
 </section>

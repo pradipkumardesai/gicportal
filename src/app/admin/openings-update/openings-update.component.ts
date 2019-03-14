@@ -10,7 +10,6 @@ import { DataService } from '../../services/data.service';
 export class OpeningsUpdateComponent implements OnInit {
 
   job: JobOpeningsModel = new JobOpeningsModel();
-
   private postRslt: string = '';
   private postBack: string = 'grey';
   private getRslt: string = '';
@@ -20,10 +19,12 @@ export class OpeningsUpdateComponent implements OnInit {
   }
 
   ngOnInit() {
-    var result = this.dataSvc.saveJobOpening(this.job).subscribe(
+  }
+  
+  save() {
+    this.dataSvc.saveJobOpening(this.job).subscribe(
       r => { this.postRslt = r; this.getBack = 'success'; },
       e => { console.log(e); this.getBack = 'error'; }
     );
   }
-
 }

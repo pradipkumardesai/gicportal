@@ -33,15 +33,14 @@
 		<div class="col-md-8">
 			<div class="row innerInfoRow">
 				<div *ngFor="let position of openPositions">
-					<div class="col-md-8">
+					<div class="col-md-6">
 						<a href="#" routerLink="/emp-achievements-details">
 							<div class="employeeAchievementBox">
-								<div class="employeeAchievementContent">
-									<div class="imgBox">
-										<img src="../../../../../assets/img/Award.png" />
-									</div>
-									<h4>{{position.Jobcode}}</h4>
-									<h5>{{position.Designation}}</h5>
+								<div class="employeeAchievementContent">									
+									<h4>Jobcode : {{position.Jobcode}}</h4>
+									<h5>Designation : {{position.Designation}}</h5>
+									<h5>Skils : {{position.Skills}}</h5>
+									<h5>Experience : {{position.Experience}}</h5>
 								</div>
 							</div>
 						</a>
