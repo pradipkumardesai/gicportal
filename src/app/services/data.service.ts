@@ -11,6 +11,8 @@ import { EmployeeModel } from '../models/EmployeeModel';
 import { LookupDataModel } from '../models/LookupDataModel';
 import { CommiteeModel } from '../models/CommiteeModel';
 import { PolicyModel } from '../models/PolicyModel';
+import { PolicyDetailsModel } from '../models/PolicyDetailsModel';
+import { JobOpeningsModel } from '../models/JobOpeningsModel';
 
 @Injectable(
   //{  providedIn: 'root'}
@@ -106,11 +108,34 @@ export class DataService {
       });
   }
 
-
   getAllPolicies(): Observable<Array<PolicyModel>> {
     let serviceUrl: string = `${environment.serviceBaseUrl}/policy/get/`;
     return this.http.get(serviceUrl, { responseType: 'json' })
       .map((rslt: Array<PolicyModel>) => {
+        return rslt;
+      });
+  }
+
+  getPolicyDetails(guid: string): Observable<PolicyDetailsModel> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/getdetails/` + guid;
+    return this.http.get(serviceUrl, { responseType: 'json' })
+      .map((rslt: PolicyDetailsModel) => {
+        return rslt;
+      });
+  }
+
+  savePolicyDetails(policy: PolicyDetailsModel): Observable<string> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/save/`;
+    return this.http.post(serviceUrl, policy, { responseType: 'text' })
+      .map((rslt: string) => {
+        return rslt;
+      });
+  }
+
+  saveJobOpening(jobModel: JobOpeningsModel): Observable<string> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/jobopening/save/`;
+    return this.http.post(serviceUrl, jobModel, { responseType: 'text' })
+      .map((rslt: string) => {
         return rslt;
       });
   }

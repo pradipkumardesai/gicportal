@@ -18,6 +18,12 @@ import { EmployeeDirectoryComponent } from "./employee-directory/components/empl
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { UserprofileComponent } from "./userprofile/userprofile.component";
 import { EmployeeAchievementsDetailComponent } from "./human-resources/employee-achievements-detail/employee-achievements-detail/employee-achievements-detail.component";
+import { PolicydetailsComponent } from "./human-resources/policies-procedures/components/policydetails/policydetails.component";
+import { PoliciesUpdateComponent } from "./admin/policies-update/policies-update.component";
+import { AchievementsUpdateComponent } from "./admin/achievements-update/achievements-update.component";
+import { OpeningsUpdateComponent } from "./admin/openings-update/openings-update.component";
+import { CommiteesUpdateComponent } from "./admin/commitees-update/commitees-update.component";
+import { EmployeesUpdateComponent } from "./admin/employees-update/employees-update.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -31,16 +37,24 @@ export const routes: Routes = [
   { path: "admin", component: AdminComponent },
   { path: "it-support", component: ItSupportComponent },
   { path: "hot-links", component: HotLinksComponent },
-  { path: "committees/:id", pathMatch:"full", redirectTo:"committees/food" },
+  { path: "committees/:id", pathMatch: "full", redirectTo: "committees/food" },
   { path: "committees", component: CommitteeComponent },
   { path: "committees-details/:name", component: CommitteedetailsComponent },
   // { path: "committees/:id", component: CommitteeComponent },
-  { path: "projects", pathMatch:"full", redirectTo:"projects/axcess" },
+  { path: "projects", pathMatch: "full", redirectTo: "projects/axcess" },
   { path: "projects/:id", component: ProjectComponent },
   { path: "emp-dir", component: EmployeeDirectoryComponent },
   { path: "about-us", component: AboutUsComponent },
   { path: "user-profile", component: UserprofileComponent },
-  { path: "emp-achievements-details/:guid", component: EmployeeAchievementsDetailComponent }
+  { path: "emp-achievements-details/:guid", component: EmployeeAchievementsDetailComponent },
+  { path: "policies-details/:guid", component: PolicydetailsComponent },
+  //Update routes
+  { path: "policies-update", component: PoliciesUpdateComponent },
+  { path: "achievements-update", component: AchievementsUpdateComponent },
+  { path: "openings-update", component: OpeningsUpdateComponent },
+  { path: "commitees-update", component: CommiteesUpdateComponent },
+  { path: "employees-update", component: EmployeesUpdateComponent }
+
 
 ];
 
@@ -49,4 +63,4 @@ export const routes: Routes = [
   exports: [],
   declarations: []
 })
-export class AppRouteModule {}
+export class AppRouteModule { }

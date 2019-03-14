@@ -27,7 +27,7 @@
 		<div class="col-md-8">
 			<div class="row innerInfoRow">
 				<div class="col-md-4" *ngFor="let policy of policyList">
-					<a href="Policies and Procedures Details.html">
+					<a href="#" routerLink="/policies-details/{{this.policy.PoliciesProcedureGuid}}" >
 						<div class="landingPolicyBox landingPolicyBoxDetail">
 							<div class="landingPolicyContent">
 								<h4>{{policy.PoliciesProcedureName}}</h4>
@@ -36,7 +36,7 @@
 							</div>
 						</div>
 					</a>
-				</div>				
+				</div>
 			</div>
 		</div>
 		<div class="col-md-2"></div>

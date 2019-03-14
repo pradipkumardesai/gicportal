@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
@@ -18,12 +18,13 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { UserprofileModule } from "./userprofile/userprofile.module";
 
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AuthenticationService }  from './services/authentication.service';
-import { DataService }  from './services/data.service';
-import { WinAuthInterceptor }  from './interceptors/winauth-interceptor';
+import { AuthenticationService } from './services/authentication.service';
+import { DataService } from './services/data.service';
+import { WinAuthInterceptor } from './interceptors/winauth-interceptor';
+import { AdministratorModule } from './admin/administrator.module';
 
 @NgModule({
-  declarations: [ 
+  declarations: [
     AppComponent
   ],
   imports: [
@@ -42,7 +43,8 @@ import { WinAuthInterceptor }  from './interceptors/winauth-interceptor';
     AboutUsModule,
     HttpClientModule,
     FormsModule,
-    UserprofileModule      
+    UserprofileModule,
+    AdministratorModule
   ],
   providers: [
     {

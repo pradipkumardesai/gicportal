@@ -11,18 +11,20 @@ import { DataService } from '../../../../services/data.service';
 })
 export class PoliciesProceduresComponent implements OnInit {
 
-  policyList:Array<PolicyModel>  = new Array<PolicyModel>();
+  policyList: Array<PolicyModel> = new Array<PolicyModel>();
 
   private postRslt: string = '';
   private postBack: string = 'grey';
   private getRslt: string = '';
   private getBack: string = 'grey';
-  constructor(private dataSvc: DataService) { }
+  constructor(private dataSvc: DataService) {
+
+  }
 
   ngOnInit() {
     var result = this.dataSvc.getAllPolicies().subscribe(
-      r => {this.policyList = r; this.getBack = 'success';},
-      e => {console.log(e); this.getBack = 'error';}
+      r => { this.policyList = r; this.getBack = 'success'; },
+      e => { console.log(e); this.getBack = 'error'; }
     );
   }
 
