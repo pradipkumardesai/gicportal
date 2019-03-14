@@ -18,12 +18,15 @@ import { EmployeeDirectoryComponent } from "./employee-directory/components/empl
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { UserprofileComponent } from "./userprofile/userprofile.component";
 import { EmployeeAchievementsDetailComponent } from "./human-resources/employee-achievements-detail/employee-achievements-detail/employee-achievements-detail.component";
+<<<<<<< HEAD
 import { PolicydetailsComponent } from "./human-resources/policies-procedures/components/policydetails/policydetails.component";
 import { PoliciesUpdateComponent } from "./admin/policies-update/policies-update.component";
 import { AchievementsUpdateComponent } from "./admin/achievements-update/achievements-update.component";
 import { OpeningsUpdateComponent } from "./admin/openings-update/openings-update.component";
 import { CommiteesUpdateComponent } from "./admin/commitees-update/commitees-update.component";
 import { EmployeesUpdateComponent } from "./admin/employees-update/employees-update.component";
+=======
+import { AdminManagerComponent } from "./admin-manager/admin-manager.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -55,6 +58,8 @@ export const routes: Routes = [
   { path: "commitees-update", component: CommiteesUpdateComponent },
   { path: "employees-update", component: EmployeesUpdateComponent }
 
+  { path: "super-admin", component: AdminManagerComponent },
+  { path: "emp-achievements-details/:guid", component: EmployeeAchievementsDetailComponent }
 
 ];
 
