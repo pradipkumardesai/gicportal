@@ -1,0 +1,49 @@
+
+<section class="detailTopSection">
+    <wk-nav-bar></wk-nav-bar>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="innerDetailHeadingBox">
+          <h3 class="committeeLandingHeading">
+            Add/Update Policies &amp; Procedures
+          </h3>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  
+  </section>
+  <section class="detailInnerSection">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="row innerInfoRow">
+          
+          <form>
+            <div class="form-group">
+              <label for="policyName">Policy Name</label>
+              <input type="text" class="form-control" id="policyName" placeholder="example:WFH " 
+              [(ngModel)]="this.policy.AdminPoliciesName" name="AdminPoliciesName">
+            </div>
+            <div class="form-group">
+              <label for="policySummary">Policy Summary</label>            
+              <input type="email" class="form-control" id="policySummary" placeholder="example: policy details" 
+              [(ngModel)]="this.policy.AdminPoliciesDetails"  name="AdminPoliciesDetails">
+            </div>          
+            <div class="form-group">
+              <label for="policyDetail">Policy Details</label>
+              <textarea class="form-control" id="policyDetail" rows="3" 
+              [(ngModel)]="this.policy.PoliciesFullDetails" name="PoliciesFullDetails"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" (click)="save()">Submit</button>
+          </form>
+  
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  
+  
+  
+  </section>

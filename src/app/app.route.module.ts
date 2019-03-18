@@ -24,6 +24,10 @@ import { AchievementsUpdateComponent } from "./admin/achievements-update/achieve
 import { OpeningsUpdateComponent } from "./admin/openings-update/openings-update.component";
 import { CommiteesUpdateComponent } from "./admin/commitees-update/commitees-update.component";
 import { EmployeesUpdateComponent } from "./admin/employees-update/employees-update.component";
+import { AdminpoliciesdetailsComponent } from "./help-desk/admin/components/adminpoliciesdetails/adminpoliciesdetails.component";
+import { ItSupportdetailsComponent } from "./help-desk/it-support/components/it-supportdetails/it-supportdetails.component";
+import { AdminpoliciesUpdateComponent } from "./admin/adminpolicies-update/adminpolicies-update.component";
+import { ItpoliciesUpdateComponent } from "./admin/itpolicies-update/itpolicies-update.component";
 
 export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -35,7 +39,9 @@ export const routes: Routes = [
   { path: "birthdays-this-month", component: BirthdaysThisMonthComponent },
   { path: "downloads", component: DownloadsComponent },
   { path: "admin", component: AdminComponent },
+  { path: "adminpoliciesdetails/:guid", component: AdminpoliciesdetailsComponent },
   { path: "it-support", component: ItSupportComponent },
+  { path: "it-supportdetails/:guid", component: ItSupportdetailsComponent },
   { path: "hot-links", component: HotLinksComponent },
   { path: "committees/:id", pathMatch: "full", redirectTo: "committees/food" },
   { path: "committees", component: CommitteeComponent },
@@ -50,11 +56,23 @@ export const routes: Routes = [
   { path: "policies-details/:guid", component: PolicydetailsComponent },
   //Update routes
   { path: "policies-update", component: PoliciesUpdateComponent },
+  { path: "policies-update/:guid", component: PoliciesUpdateComponent },
   { path: "achievements-update", component: AchievementsUpdateComponent },
+  { path: "achievements-update/:guid", component: AchievementsUpdateComponent },
   { path: "openings-update", component: OpeningsUpdateComponent },
+  { path: "openings-update/:guid", component: OpeningsUpdateComponent },
   { path: "commitees-update", component: CommiteesUpdateComponent },
+  { path: "commitees-update/:guid", component: CommiteesUpdateComponent },
   { path: "employees-update", component: EmployeesUpdateComponent },
-
+  { path: "employees-update/:guid", component: EmployeesUpdateComponent },
+  
+  { path: "adminpolicies-update", component: AdminpoliciesUpdateComponent },
+  { path: "adminpolicies-update/:guid", component: AdminpoliciesUpdateComponent },
+  { path: "itpolicies-update", component: ItpoliciesUpdateComponent },
+  { path: "itpolicies-update/:guid", component: ItpoliciesUpdateComponent },
+  
+  { path: "employees-update/:guid", component: EmployeesUpdateComponent },
+  
   { path: "emp-achievements-details/:guid", component: EmployeeAchievementsDetailComponent }
 
 ];

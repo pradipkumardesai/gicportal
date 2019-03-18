@@ -1,8 +1,48 @@
-<wk-module-header headerText="IT Support"></wk-module-header>
+<!-- <wk-module-header headerText="Policies & Procedures"></wk-module-header>
 <div>        
-  <ul style="margin: 25px 0px 0px -30px;">
-      <li *ngFor="let policy of policies" style="display: inline-block;width: 300px;height: 195px;background-color: white;margin-bottom: 7px;padding: 0px 10px;">
-         <wk-policy-card [policy]="policy"></wk-policy-card>
-      </li>
-  </ul>  
-</div>
+    <ul style="margin: 25px 0px 0px -30px;">
+        <li *ngFor="let policy of policies" style="display: inline-block;width: 300px;height: 195px;background-color: white;margin-bottom: 7px;padding: 0px 10px;">
+           <wk-policy-card [policy]="policy"></wk-policy-card>
+        </li>
+    </ul>  
+</div> -->
+<section class="detailTopSection">
+    <wk-nav-bar></wk-nav-bar>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="innerDetailHeadingBox">
+          <h3 class="committeeLandingHeading">
+            IT Policies &amp; Procedures
+          </h3>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  
+  </section>
+  <section class="detailInnerSection">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="row innerInfoRow">
+          <div class="col-md-4" *ngFor="let policy of policyList">
+            <a href="#" routerLink="/it-supportdetails/{{this.policy.ITPoliciesGuid}}" >
+              <div class="landingPolicyBox landingPolicyBoxDetail">
+                <div class="landingPolicyContent">
+                  <h4>{{policy.ITPoliciesName}}</h4>
+                  <h5>{{policy.ITPoliciesDetails}}</h5>
+                  <h6>{{policy.LastModifiedDate| date:'MM/dd/yyyy'}}</h6>								
+                    
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  
+  
+  
+  </section>

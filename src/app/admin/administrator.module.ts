@@ -9,6 +9,8 @@ import { CommiteesUpdateComponent } from './commitees-update/commitees-update.co
 import { EmployeesUpdateComponent } from './employees-update/employees-update.component';
 import { CoreModule } from '../core/core.module';
 import { FormsModule } from '@angular/forms';
+import { AdminpoliciesUpdateComponent } from './adminpolicies-update/adminpolicies-update.component';
+import { ItpoliciesUpdateComponent } from './itpolicies-update/itpolicies-update.component';
 
 @NgModule({
   imports: [
@@ -18,6 +20,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule
 
   ],
-  declarations: [PoliciesUpdateComponent, AchievementsUpdateComponent, OpeningsUpdateComponent, CommiteesUpdateComponent, EmployeesUpdateComponent]
+  declarations: [PoliciesUpdateComponent, AchievementsUpdateComponent, OpeningsUpdateComponent, CommiteesUpdateComponent, EmployeesUpdateComponent, AdminpoliciesUpdateComponent, ItpoliciesUpdateComponent]
 })
 export class AdministratorModule { }

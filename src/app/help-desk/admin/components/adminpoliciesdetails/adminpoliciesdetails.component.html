@@ -1,0 +1,36 @@
+<section class="detailTopSection">
+    <wk-nav-bar></wk-nav-bar>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="innerDetailHeadingBox">
+          <img src="../../../../../assets/img/policy.png" />
+          <h3>
+            {{policyDetails.AdminPoliciesName}}
+          </h3>
+          <a href="#" routerLink="/admin"><button>Go back to Admin Policies</button></a>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </section>
+  
+  <section class="detailInnerSection">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="col-md-2">
+          <a href="#" routerLink="/policies-update/{{this.policyDetails.AdminPoliciesGuid}}" class="btn btn-success">Edit</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="policiesInnerDetailContent" [innerHTML]="policyDetails.PoliciesFullDetails">
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  
+  </section>

@@ -13,6 +13,8 @@ import { CommiteeModel } from '../models/CommiteeModel';
 import { PolicyModel } from '../models/PolicyModel';
 import { PolicyDetailsModel } from '../models/PolicyDetailsModel';
 import { JobOpeningsModel } from '../models/JobOpeningsModel';
+import { ITPoliciesModel } from '../models/ITPoliciesModel';
+import { AdminPoliciesModel } from '../models/AdminPoliciesModel';
 
 @Injectable(
   //{  providedIn: 'root'}
@@ -45,7 +47,13 @@ export class DataService {
         return rslt;
       });
   }
-
+  getProfilebyGuid(guid: string): Observable<EmployeeModel> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/data/get/`+ guid;
+    return this.http.get(serviceUrl, { responseType: 'json' })
+      .map((rslt: EmployeeModel) => {
+        return rslt;
+      });
+  }
   getNewJoinees(): Observable<Array<EmployeeModel>> {
     let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetNewJoiness`;
     return this.http.get(serviceUrl, { responseType: 'json' })
@@ -62,7 +70,6 @@ export class DataService {
       });
   }
 
-
   getAllEmployees(): Observable<string> {
     let serviceUrl: string = `${environment.serviceBaseUrl}/data/GetAllEmployee`;
     return this.http.get(serviceUrl, { responseType: 'json' })
@@ -78,11 +85,6 @@ export class DataService {
         return rslt;
       });
   }
-
-
-
-
-
 
   getAllAchievement(): Observable<Array<AchievementModel>> {
     let serviceUrl: string = `${environment.serviceBaseUrl}/achievement/get`;
@@ -131,6 +133,53 @@ export class DataService {
         return rslt;
       });
   }
+
+  getITPolicies(): Observable<Array<ITPoliciesModel>> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/getitpolicies/`;
+    return this.http.get(serviceUrl, { responseType: 'json' })
+      .map((rslt: Array<ITPoliciesModel>) => {
+        return rslt;
+      });
+  }
+  getITPolicyDetails(guid: string): Observable<ITPoliciesModel> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/getitpoliciesdetails/` + guid;
+    return this.http.get(serviceUrl, { responseType: 'json' })
+      .map((rslt: ITPoliciesModel) => {
+        return rslt;
+      });
+  }
+  saveITPolicyDetails(policy: ITPoliciesModel): Observable<string> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/saveitpolicies/`;
+    return this.http.post(serviceUrl, policy, { responseType: 'text' })
+      .map((rslt: string) => {
+        return rslt;
+      });
+  }
+
+
+  getAdminPolicies(): Observable<Array<AdminPoliciesModel>> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/getadminpolicies/`;
+    return this.http.get(serviceUrl, { responseType: 'json' })
+      .map((rslt: Array<AdminPoliciesModel>) => {
+        return rslt;
+      });
+  }
+
+  getAdminPolicyDetails(guid: string): Observable<AdminPoliciesModel> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/getadminpoliciesdetails/` + guid;
+    return this.http.get(serviceUrl, { responseType: 'json' })
+      .map((rslt: AdminPoliciesModel) => {
+        return rslt;
+      });
+  }
+  saveAdminPolicyDetails(policy: AdminPoliciesModel): Observable<string> {
+    let serviceUrl: string = `${environment.serviceBaseUrl}/policy/saveadminpolicies/`;
+    return this.http.post(serviceUrl, policy, { responseType: 'text' })
+      .map((rslt: string) => {
+        return rslt;
+      });
+  }
+
   saveJobOpening(jobModel: JobOpeningsModel): Observable<string> {
     let serviceUrl: string = `${environment.serviceBaseUrl}/job/save/`;
     return this.http.post(serviceUrl, jobModel, { responseType: 'text' })

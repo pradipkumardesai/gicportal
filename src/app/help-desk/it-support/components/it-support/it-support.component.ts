@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Policy } from '../../../../shared/models/policy.model';
 import { PoliciesProcedureService } from '../../../../human-resources/policies-procedures/services/policies-procedure.service';
+import { ITPoliciesModel } from '../../../../models/ITPoliciesModel';
+import { DataService } from '../../../../services/data.service';
 
 @Component({
   selector: 'wk-it-support',
@@ -9,14 +11,21 @@ import { PoliciesProcedureService } from '../../../../human-resources/policies-p
 })
 export class ItSupportComponent implements OnInit {
 
-  policies: Array<Policy> = null;
+  policyList: Array<ITPoliciesModel> = new Array<ITPoliciesModel>();
 
-  constructor(private policyService: PoliciesProcedureService) {}
+  private postRslt: string = '';
+  private postBack: string = 'grey';
+  private getRslt: string = '';
+  private getBack: string = 'grey';
+  constructor(private dataSvc: DataService) {
+
+  }
 
   ngOnInit() {
-    this.policyService.getPolicies().then(policies => {
-      this.policies = policies;
-    });
+    var result = this.dataSvc.getITPolicies().subscribe(
+      r => { this.policyList = r; this.getBack = 'success'; },
+      e => { console.log(e); this.getBack = 'error'; }
+    );
   }
 
 }

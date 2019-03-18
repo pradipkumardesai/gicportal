@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { PolicyDetailsModel } from '../../models/PolicyDetailsModel';
-import { DataService } from '../../services/data.service';
+import { AdminPoliciesModel } from '../../models/AdminPoliciesModel';
 import { ActivatedRoute } from '@angular/router';
+import { DataService } from '../../services/data.service';
 
 @Component({
-  selector: 'wk-policies-update',
-  templateUrl: './policies-update.component.html',
-  styleUrls: ['./policies-update.component.scss']
+  selector: 'wk-adminpolicies-update',
+  templateUrl: './adminpolicies-update.component.html',
+  styleUrls: ['./adminpolicies-update.component.scss']
 })
-export class PoliciesUpdateComponent implements OnInit {
+export class AdminpoliciesUpdateComponent implements OnInit {
 
   guid: string;
   private sub: any;
 
-  policy: PolicyDetailsModel = new PolicyDetailsModel();
+  policy: AdminPoliciesModel = new AdminPoliciesModel();
 
   private postRslt: string = '';
   private postBack: string = 'grey';
@@ -26,8 +26,8 @@ export class PoliciesUpdateComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.guid != undefined) {       
-      this.dataSvc.getPolicyDetails(this.guid).subscribe(
+    if (this.guid != '') {       
+      this.dataSvc.getAdminPolicyDetails(this.guid).subscribe(
         r => { this.policy = r; this.getBack = 'success'; },
         e => { console.log(e); this.getBack = 'error'; }
       );
@@ -35,7 +35,7 @@ export class PoliciesUpdateComponent implements OnInit {
   }
 
   save() {
-    this.dataSvc.savePolicyDetails(this.policy).subscribe(
+    this.dataSvc.saveAdminPolicyDetails(this.policy).subscribe(
       r => { this.postRslt = r; this.getBack = 'success'; },
       e => { console.log(e); this.getBack = 'error'; }
     );

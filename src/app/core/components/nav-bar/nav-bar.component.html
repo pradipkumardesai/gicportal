@@ -31,8 +31,8 @@
           <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown" role="button" aria-haspopup="true"
             aria-expanded="false"> Help Desk <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Admin</a></li>
-            <li><a href="#">IT-Support</a></li>
+            <li><a href="#" routerLink="/admin">Admin</a></li>
+            <li><a href="#" routerLink="/it-support">IT-Support</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -67,7 +67,9 @@
           <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown" role="button" aria-haspopup="true"
             aria-expanded="false"> Admin <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#" routerLink="/policies-update">Policies &amp; Procedures</a></li>
+            <li><a href="#" routerLink="/policies-update">HR Policies &amp; Procedures</a></li>
+            <li><a href="#" routerLink="/adminpolicies-update">IT Policies &amp; Procedures</a></li>
+            <li><a href="#" routerLink="/itpolicies-update">Admin Policies &amp; Procedures</a></li>
             <li><a href="#" routerLink="/achievements-update">Employee Achievements</a></li>
             <li><a href="#" routerLink="/openings-update">Internal Openings</a></li>
             <li><a href="#" routerLink="/commitees-update">Commitees</a></li>
@@ -81,7 +83,7 @@
             <li><a href="#" routerLink="/user-profile">My Profile</a></li>
             <!-- <li><a href="#">Logout</a></li> -->
           </ul>
-        <!-- <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user"></i> {{authRslt}} <span class="caret"></span></a>
+          <!-- <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user"></i> {{authRslt}} <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#" routerLink="/user-profile">My Profile</a></li>
           <li><a href="#" routerLink="/super-admin">Admin management</a></li>

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Policy } from '../../../../shared/models/policy.model';
 import { PoliciesProcedureService } from '../../../../human-resources/policies-procedures/services/policies-procedure.service';
+import { AdminPoliciesModel } from '../../../../models/AdminPoliciesModel';
+import { DataService } from '../../../../services/data.service';
 
 @Component({
   selector: 'wk-admin',
@@ -9,14 +11,22 @@ import { PoliciesProcedureService } from '../../../../human-resources/policies-p
 })
 export class AdminComponent implements OnInit {
 
-  policies: Array<Policy> = null;
+  
+  policyList: Array<AdminPoliciesModel> = new Array<AdminPoliciesModel>();
 
-  constructor(private policyService: PoliciesProcedureService) {}
+  private postRslt: string = '';
+  private postBack: string = 'grey';
+  private getRslt: string = '';
+  private getBack: string = 'grey';
+  constructor(private dataSvc: DataService) {
+
+  }
 
   ngOnInit() {
-    this.policyService.getPolicies().then(policies => {
-      this.policies = policies;
-    });
+    var result = this.dataSvc.getAdminPolicies().subscribe(
+      r => { this.policyList = r; this.getBack = 'success'; },
+      e => { console.log(e); this.getBack = 'error'; }
+    );
   }
 
 }

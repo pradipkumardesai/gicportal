@@ -1,22 +1,31 @@
 <section class="detailTopSection">
     <wk-nav-bar></wk-nav-bar>
-    <div class="row">	
+    <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <div class="profileDetailHeadingBox">					
-                <img src="../../assets/img/user.png"/>
+            <div class="profileDetailHeadingBox">
+                <img src="../../assets/img/user.png" />
                 <h3>
                     {{employee.Name}}
                 </h3>
                 <h5>{{employee.EmailId}}</h5>
-                
+
             </div>
-        </div>			
+        </div>
         <div class="col-md-2"></div>
     </div>
 </section>
 
 <section class="detailInnerSection profileInnerSection">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="col-md-2">
+                <a href="#" routerLink="/employees-update/{{employee.UserGuid}}" class="btn btn-success">Edit</a>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -26,7 +35,7 @@
                 <li class=""><a href="#tab3"><i class="material-icons">list</i> My Activities</a></li>
             </ul>
             <div class="tab-content innerTabContent">
-                
+
                 <div id="tab1" class="tab-pane fade in active">
                     <div class="tabContentBox">
                         <div class="row">
@@ -47,11 +56,11 @@
                                     <h5>Department</h5>
                                     <h4>TAA</h4>
                                 </div>
-                            </div>								
+                            </div>
                             <div class="col-md-4">
                                 <div class="genInfoBox">
                                     <h5>Contact No</h5>
-                                    <h4>8412048987</h4>
+                                    <h4>{{employee.ContactNo}}</h4>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -87,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!--
                 <div id="tab2" class="tab-pane fade in">
                     <div class="taskBox">
@@ -190,8 +199,9 @@
                                     <div class="activityBubble activityBubblePurple"></div>
                                 </td>
                                 <td>
-                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore  agna elit enim at minim veniam quis nostrud
-                                </td>									
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore
+                                    agna elit enim at minim veniam quis nostrud
+                                </td>
                             </tr>
                             <tr>
                                 <td>27 Feb</td>
@@ -200,7 +210,7 @@
                                 </td>
                                 <td>
                                     Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt
-                                </td>									
+                                </td>
                             </tr>
                             <tr>
                                 <td>25 Feb</td>
@@ -208,8 +218,9 @@
                                     <div class="activityBubble activityBubbleRed"></div>
                                 </td>
                                 <td>
-                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore  agna elit enim 
-                                </td>									
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore
+                                    agna elit enim
+                                </td>
                             </tr>
                             <tr>
                                 <td>22 Feb</td>
@@ -226,8 +237,9 @@
                                     <div class="activityBubble activityBubblePurple"></div>
                                 </td>
                                 <td>
-                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore  agna elit enim at minim veniam quis nostrud
-                                </td>									
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore
+                                    agna elit enim at minim veniam quis nostrud
+                                </td>
                             </tr>
                             <tr>
                                 <td>12 Feb</td>
@@ -236,7 +248,7 @@
                                 </td>
                                 <td>
                                     Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt
-                                </td>									
+                                </td>
                             </tr>
                             <tr>
                                 <td>6 Feb</td>
@@ -244,8 +256,9 @@
                                     <div class="activityBubble activityBubbleRed"></div>
                                 </td>
                                 <td>
-                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore  agna elit enim 
-                                </td>									
+                                    Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore
+                                    agna elit enim
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -254,9 +267,9 @@
         </div>
         <div class="col-md-2"></div>
     </div>
-    
-    
-    
+
+
+
 </section>
 
 <!-- <div style="margin:10px; width: 42%;font-size: 20px;padding-left: 0px;">
